@@ -1,0 +1,26 @@
+{
+  "name": "the-rd-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gatsby develop -p 8888 -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raevilman/the-rd-notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raevilman/the-rd-notes/issues"
+  },
+  "homepage": "https://github.com/raevilman/the-rd-notes#readme",
+  "dependencies": {
+    "gatsby": "^2.24.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
