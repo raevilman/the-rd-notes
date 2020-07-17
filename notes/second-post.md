@@ -1,5 +1,5 @@
 ---
-title: 'My second blog post'
+title: 'my second blog post'
 description: 'Adding the second markdown content to blog'
 slug: '/second-post'
 date_created: '2020-07-17'
