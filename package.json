@@ -20,9 +20,11 @@
   "homepage": "https://github.com/raevilman/the-rd-notes#readme",
   "dependencies": {
     "gatsby": "^2.24.3",
+    "gatsby-plugin-postcss": "^2.3.11",
     "gatsby-source-filesystem": "^2.3.19",
     "gatsby-transformer-remark": "^2.8.25",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "tailwindcss": "^1.5.1"
   }
 }
