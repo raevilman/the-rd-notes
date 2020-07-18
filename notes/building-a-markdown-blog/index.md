@@ -50,10 +50,12 @@ Below are the steps, which have been implemented on this site
 - [GraphiQL](/building-a-markdown-blog/graphiql)
 - [Blog Post List](/building-a-markdown-blog/blog-post-list)
 - [Blog Post Template](/building-a-markdown-blog/blog-post-template)
+- [Blog Layout](/building-a-markdown-blog/layout-using-tailwind)
 
 upcoming
-- Blog Layout
-- Images
+
+- Fix Images
+- Header & Footer
 - Code Syntax Highlighting
 - 404 Page
 - Header Links

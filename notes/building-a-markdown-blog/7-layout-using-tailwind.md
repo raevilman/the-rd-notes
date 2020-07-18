@@ -177,3 +177,6 @@ return (
     </Layout>
 );
 ```
+
+---
+This [GitHub commit](https://github.com/raevilman/the-rd-notes/commit/4bb7dc0486c5387e3b78b7158526d01a58944d83) represents what we've done in this post 🤩
