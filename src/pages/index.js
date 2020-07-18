@@ -1,10 +1,25 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
+import Layout from "../components/Layout";
 
 export default ({ data }) => {
   return (
     <>
-      <div>
+      <Layout>
+        <h1>Hi! I am RD 👋</h1>
+
+        <p>I am building this blog using GatsbyJs fueled by Markdown files.</p>
+        <p>
+          If you wish to follow along the journey of building this blog step by step.
+        </p>
+        <p>
+        I am documenting every step here 👉 <Link to="/building-a-markdown-blog">Building a Markdown Blog</Link>
+        </p>
+
+        <hr/>
+        <h2>
+        Recent Posts!
+        </h2>
         {data.allMarkdownRemark.edges.map((post) => {
           const {
             title,
@@ -17,15 +32,13 @@ export default ({ data }) => {
           return (
             <>
               <p>{date_modified}</p>
-              <Link to={slug}>
-                <h2>{title}</h2>
-              </Link>
+              <Link to={slug}>{title}</Link>
               <p>{description}</p>
               <br />
             </>
           );
         })}
-      </div>
+      </Layout>
     </>
   );
 };

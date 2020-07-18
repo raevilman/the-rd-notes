@@ -13,6 +13,7 @@ module.exports = {
                 path: `${__dirname}/notes`,
                 name: `notes`,
             },
-        }
+        },
+        `gatsby-plugin-postcss`,
     ],
 };
