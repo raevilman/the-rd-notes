@@ -52,12 +52,12 @@ Below are the steps, which have been implemented on this site
 6. [Blog Post Template](/building-a-markdown-blog/blog-post-template)
 7. [Minimal layout using Tailwind](/building-a-markdown-blog/layout-using-tailwind)
 8. [Restructure index page](/building-a-markdown-blog/restructure-index-page)
+9. [Fix images not rendering](/building-a-markdown-blog/fix-images-not-rendering)
 
 upcoming
 
-- Fix Images
+- GatsbyJs incremental builds on Netlify
 - Use tags
-- Header & Footer
 - Code Syntax Highlighting
 - 404 Page
 - Header Links
