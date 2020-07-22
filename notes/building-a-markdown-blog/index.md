@@ -44,17 +44,18 @@ In this series, I'll write about each step in the journey of building this blog.
 
 Below are the steps, which have been implemented on this site 
 
-- [The Setup](/building-a-markdown-blog/setup)  
-- [Markdown](/building-a-markdown-blog/markdown)
-- [Site Configuration](/building-a-markdown-blog/site-configuration)
-- [GraphiQL](/building-a-markdown-blog/graphiql)
-- [Blog Post List](/building-a-markdown-blog/blog-post-list)
-- [Blog Post Template](/building-a-markdown-blog/blog-post-template)
-- [Blog Layout](/building-a-markdown-blog/layout-using-tailwind)
+1. [The Setup](/building-a-markdown-blog/setup)  
+2. [Markdown](/building-a-markdown-blog/markdown)
+3. [Site Configuration](/building-a-markdown-blog/site-configuration)
+4. [GraphiQL](/building-a-markdown-blog/graphiql)
+5. [Blog Post List](/building-a-markdown-blog/blog-post-list)
+6. [Blog Post Template](/building-a-markdown-blog/blog-post-template)
+7. [Minimal layout using Tailwind](/building-a-markdown-blog/layout-using-tailwind)
 
 upcoming
 
 - Fix Images
+- Use tags
 - Header & Footer
 - Code Syntax Highlighting
 - 404 Page
