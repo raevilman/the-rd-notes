@@ -4,50 +4,77 @@ import Layout from "../components/Layout";
 
 export default ({ data }) => {
   return (
-    <>
+    <div>
       <Layout>
-        <h1>Hi! I am RD 👋</h1>
-
-        <p>I am building this blog using GatsbyJs fueled by Markdown files.</p>
-        <p>
-          If you wish to follow along the journey of building this blog step by step.
-        </p>
-        <p>
-        I am documenting every step here 👉 <Link to="/building-a-markdown-blog">Building a Markdown Blog</Link>
-        </p>
-
-        <hr/>
-        <h2>
-        Recent Posts!
-        </h2>
-        {data.allMarkdownRemark.edges.map((post) => {
-          const {
-            title,
-            description,
-            slug,
-            author,
-            date_modified,
-          } = post.node.frontmatter;
-          const excerpt = post.node.excerpt;
-          return (
-            <>
-              <p>{date_modified}</p>
-              <Link to={slug}>{title}</Link>
-              <p>{description}</p>
-              <br />
-            </>
-          );
-        })}
+        <section className="text-center">
+          <h1>Hey! 👋</h1>
+        </section>
+        <section className="mt-12">
+          <h3>Projects</h3>
+          <div className="px-4 py-2">
+            {data.allMarkdownRemark.edges.map((post) => {
+              const {
+                title,
+                description,
+                slug,
+                author,
+                date_modified,
+                is_project,
+              } = post.node.frontmatter;
+              const excerpt = post.node.excerpt;
+              return (
+                is_project && (
+                  <>
+                    <Link to={slug}>{title}</Link>
+                    <p className="text-gray-800">{description}</p>
+                    <br />
+                  </>
+                )
+              );
+            })}
+          </div>
+        </section>
+        <section>
+          <h3> Recent Posts!</h3>
+          <div className="px-4 py-2">
+            {data.allMarkdownRemark.edges.map((post) => {
+              const {
+                title,
+                description,
+                slug,
+                author,
+                date_modified,
+                is_project,
+              } = post.node.frontmatter;
+              const excerpt = post.node.excerpt;
+              return (
+                !is_project && (
+                  <>
+                    <p className="text-gray-600 text-xs">{date_modified}</p>
+                    <Link to={slug}>{title}</Link>
+                    <p className="text-gray-800">{description}</p>
+                    <br />
+                  </>
+                )
+              );
+            })}
+          </div>
+        </section>
       </Layout>
-    </>
+    </div>
   );
 };
 
 export const query = graphql`
   query SiteIndexQuery {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date_modified], order: DESC }
-      filter: { frontmatter: { is_published: { eq: true } } }
+      sort: { fields: [frontmatter___date_modified]}
+      filter: {
+        frontmatter: {
+          is_published: { eq: true }
+          show_in_recent: { eq: true }
+        }
+      }
     ) {
       edges {
         node {
@@ -61,6 +88,7 @@ export const query = graphql`
             author
             is_published
             show_in_recent
+            is_project
           }
         }
       }
