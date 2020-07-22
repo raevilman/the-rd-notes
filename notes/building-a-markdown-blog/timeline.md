@@ -6,7 +6,7 @@ date_created: '2020-07-18'
 date_modified: '2020-07-18'
 author: 'RD'
 is_published: true
-show_in_recent: true
+show_in_recent: false
 ---
 
 
