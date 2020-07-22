@@ -1,19 +1,32 @@
 const siteMetadata = {
-    title: `theRDnotes`,
-    description: `my digital notebook...`,
+  title: `theRDnotes`,
+  description: `my digital notebook...`,
 };
 
 module.exports = {
-    siteMetadata: siteMetadata,
-    plugins: [
-        `gatsby-transformer-remark`,
-        {
-            resolve: `gatsby-source-filesystem`,
+  siteMetadata: siteMetadata,
+  plugins: [
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
             options: {
-                path: `${__dirname}/notes`,
-                name: `notes`,
+              maxWidth: 800,
             },
-        },
-        `gatsby-plugin-postcss`,
-    ],
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/notes`,
+        name: `notes`,
+      },
+    },
+    `gatsby-plugin-postcss`,
+  ],
 };
