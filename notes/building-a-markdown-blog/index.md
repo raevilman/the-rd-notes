@@ -51,6 +51,7 @@ Below are the steps, which have been implemented on this site
 5. [Blog Post List](/building-a-markdown-blog/blog-post-list)
 6. [Blog Post Template](/building-a-markdown-blog/blog-post-template)
 7. [Minimal layout using Tailwind](/building-a-markdown-blog/layout-using-tailwind)
+8. [Restructure index page](/building-a-markdown-blog/restructure-index-page)
 
 upcoming
 
