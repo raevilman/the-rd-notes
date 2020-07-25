@@ -48,10 +48,10 @@ Open IntelliJ
 🎄bonus: this plugin also helps in case you are dealing with multiple [AWS Named Profiles](http://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html) or [AWS Organization](https://aws.amazon.com/organizations/)  
 
 
-## demo gif
+## demo video
 
-{tbd}
+[YouTube link](https://youtu.be/FgwptHeace4)
 
 ## IntelliJ plugin repo link
 
-{tbd}
+https://plugins.jetbrains.com/plugin/14742-aws-lambda-deployer
