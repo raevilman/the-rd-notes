@@ -95,4 +95,4 @@ https://favicon.io/favicon-generator/?t=R&ff=Playfair+Display&fs=130&fc=%23FFF&b
 
 
 ---
-This [GitHub commit](https://github.com/raevilman/the-rd-notes/pull/5/commits/4f86bddada59ca49ab205e1b82f6ebb60035c2d5) represents what we've done in this post 🤩
+This [GitHub commit](https://github.com/raevilman/the-rd-notes/commit/9d8fa277619bc08291a55933783b34652eccfc98) represents what we've done in this post 🤩
