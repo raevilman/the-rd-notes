@@ -53,10 +53,10 @@ Below are the steps, which have been implemented on this site
 7. [Minimal layout using Tailwind](/building-a-markdown-blog/layout-using-tailwind)
 8. [Restructure index page](/building-a-markdown-blog/restructure-index-page)
 9. [Fix images not rendering](/building-a-markdown-blog/fix-images-not-rendering)
+10. [Enable Gatsby incremental builds in Netlify](/building-a-markdown-blog/enable-gatsby-incremental-builds-in-netlify)
 
 upcoming
 
-- GatsbyJs incremental builds on Netlify
 - Use tags
 - Code Syntax Highlighting
 - 404 Page
