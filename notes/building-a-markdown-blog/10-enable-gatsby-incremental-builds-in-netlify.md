@@ -46,5 +46,14 @@ Its a known issue that the plugin doesn't work for preview deploys, at the time 
 (GitHub Issue: https://github.com/jlengstorf/netlify-plugin-gatsby-cache/issues/22)
 
 
+But on production deploys, the plugin seems to find the cache perfectly fine.
+
+![netlify gatsby cache found](./netlify-gatsby-cache-found.png)
+
+
+We'll see how today's configuration unfolds with future builds.
+
+Till next time! ✌️
+
 ---
 This [GitHub commit](https://github.com/raevilman/the-rd-notes/pull/5/commits/4f86bddada59ca49ab205e1b82f6ebb60035c2d5) represents what we've done in this post 🤩
