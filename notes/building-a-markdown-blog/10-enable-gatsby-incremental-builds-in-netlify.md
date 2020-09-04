@@ -1,5 +1,5 @@
 ---
-title: 'Enable Gatsby incremental builds in Netlify'
+title: '10. Enable Gatsby incremental builds in Netlify'
 description: 'Enabling new feature i.e. Gatsby incremental builds in Netlify to reduce the build time'
 slug: '/building-a-markdown-blog/enable-gatsby-incremental-builds-in-netlify'
 date_created: '2020-09-04'

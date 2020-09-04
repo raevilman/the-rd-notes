@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 export default ({ data }) => {
   return (
     <div>
-      <Layout>
+      <Layout title="theRDnotes">
         <section className="text-center">
           <h1>Hey! 👋</h1>
         </section>

@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 export default ({ data }) => {
     const { frontmatter, html } = data.markdownRemark;
     return (
-      <Layout>
+      <Layout title={frontmatter.title}>
         <p>{frontmatter.date_modified}</p>
         <h1>{frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: html }} />

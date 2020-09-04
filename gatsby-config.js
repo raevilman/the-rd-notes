@@ -6,6 +6,7 @@ const siteMetadata = {
 module.exports = {
   siteMetadata: siteMetadata,
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -28,5 +29,16 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `theRDnotes`,
+        short_name: `theRDnotes`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        display: `standalone`,
+        icon: `src/images/favicon.png`
+      },
+    }
   ],
 };
