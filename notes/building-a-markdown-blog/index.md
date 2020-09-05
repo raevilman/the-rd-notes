@@ -3,7 +3,7 @@ title: 'Building a markdown blog'
 description: 'Building a blog using GatsbyJs fueled by markdown files'
 slug: '/building-a-markdown-blog'
 date_created: '2020-07-17'
-date_modified: '2020-07-17'
+date_modified: '2020-09-05'
 author: 'RD'
 is_published: true
 show_in_recent: true
@@ -61,14 +61,9 @@ upcoming
 - Use tags
 - Code Syntax Highlighting
 - 404 Page
-- Header Links
+- Heading Links
 - & much more stuff
-
-## Timeline of Evolution
-
-I will post screenshots of the blog every month here [on this page](/building-a-markdown-blog/timeline)  
-The timeline there will represent 'how this blog has changed' over time with the steps we are going to implement.
 
 ---
  
-I am posting updates in [this](https://twitter.com/raevilman/status/1284204852155830272?s=20) Twitter thread. Please follow 🙏  
+FYI, I am posting updates in [this](https://twitter.com/raevilman/status/1284204852155830272?s=20) Twitter thread.    
