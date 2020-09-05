@@ -1,13 +1,16 @@
 @tailwind base;
 /* optional unreset css https://www.swyx.io/writing/tailwind-unreset/ */
 a {
-  @apply text-blue-700 underline;
+  @apply underline;
 }
 p {
   @apply my-4;
 }
 code {
-    font-family: monospace
+  @apply rounded p-1 font-mono font-light text-red-800 text-sm bg-gray-200;
+}
+pre code {
+    @apply block overflow-x-scroll p-3 text-current;
 }
 
 blockquote,

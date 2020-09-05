@@ -1,14 +1,12 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import NotesLayout from '../components/NotesLayout';
 
 export default ({ data }) => {
     const { frontmatter, html } = data.markdownRemark;
     return (
-      <Layout title={frontmatter.title}>
-        <p>{frontmatter.date_modified}</p>
-        <h1>{frontmatter.title}</h1>
+      <NotesLayout frontmatter={frontmatter}>
         <div dangerouslySetInnerHTML={{ __html: html }} />
-      </Layout>
+      </NotesLayout>
     );
   };
 

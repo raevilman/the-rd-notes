@@ -1,14 +1,17 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
+import Content from "../components/Content";
+import Emoji from "../components/Emoji";
 
 export default ({ data }) => {
   return (
     <div>
       <Layout title="theRDnotes">
         <section className="text-center">
-          <h1>Hey! 👋</h1>
+          <h1>Hey! <Emoji emoji="👋" label="wave"/></h1>
         </section>
+        <Content>
         <section className="mt-12">
           <h3>Projects</h3>
           <div className="px-4 py-2">
@@ -17,11 +20,8 @@ export default ({ data }) => {
                 title,
                 description,
                 slug,
-                author,
-                date_modified,
                 is_project,
               } = post.node.frontmatter;
-              const excerpt = post.node.excerpt;
               return (
                 is_project && (
                   <>
@@ -42,11 +42,9 @@ export default ({ data }) => {
                 title,
                 description,
                 slug,
-                author,
                 date_modified,
                 is_project,
               } = post.node.frontmatter;
-              const excerpt = post.node.excerpt;
               return (
                 !is_project && (
                   <>
@@ -60,6 +58,7 @@ export default ({ data }) => {
             })}
           </div>
         </section>
+        </Content>
       </Layout>
     </div>
   );
