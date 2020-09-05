@@ -1,6 +1,6 @@
 module.exports = {
   corePlugins: {
-    preflight: false,
+    // preflight: false,
   },
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   theme: {},
