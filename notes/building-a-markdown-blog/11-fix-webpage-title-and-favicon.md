@@ -9,7 +9,7 @@ is_published: true
 show_in_recent: false
 is_project: false
 ---
-In this note we'll following:  
+In this note we'll do the following:  
 - fix the web page title to render the name of current note
 - add a favicon to our Gatsby website
 

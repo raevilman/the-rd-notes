@@ -55,6 +55,7 @@ Below are the steps, which have been implemented on this site
 9. [Fix images not rendering](/building-a-markdown-blog/fix-images-not-rendering)
 10. [Enable Gatsby incremental builds in Netlify](/building-a-markdown-blog/enable-gatsby-incremental-builds-in-netlify)
 11. [Fix webpage title and favicon](/building-a-markdown-blog/fix-webpage-title-and-favicon)
+12. [Adding a Header](/building-a-markdown-blog/add-header)
 
 upcoming
 
