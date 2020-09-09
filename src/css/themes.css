@@ -1,0 +1,13 @@
+.theme-vanilla {
+  --color-bg-html: theme("colors.white");
+  --color-bg-content: theme("colors.gray.100");
+  --color-bg-block: theme("colors.gray.200");
+  --color-text-default: theme("colors.gray.900");
+}
+
+.theme-sunset {
+  --color-bg-html: #fbf5e9;
+  --color-bg-content: #fbf0d9;
+  --color-bg-block: #fbe5b5;
+  --color-text-default: #5f4b32;
+}
