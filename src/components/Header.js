@@ -4,10 +4,6 @@ import { Link } from "gatsby";
 function Header({ theme, setTheme }) {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
-  function mSetTheme(themeValue) {
-    localStorage.setItem('theme', themeValue)
-    setTheme(themeValue)
-  }
   return (
     <nav className="">
       <div className="flex items-center justify-between px-2 py-3 ">
@@ -34,17 +30,17 @@ function Header({ theme, setTheme }) {
               {isMenuOpen && (
                 <path
                   // cross
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M6 18L18 6M6 6l12 12"
                 />
               )}
               {!isMenuOpen && (
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
                 />
                 // <path
@@ -75,15 +71,19 @@ function Header({ theme, setTheme }) {
           <span className="text-xl font-medium pb-2">Themes</span>
           <button
             type="button"
-            onClick={() => mSetTheme("sunset")}
-            className={` ${theme === "sunset" ? "bg-block" : ""} focus:outline-none`}
+            onClick={() => setTheme("sunset")}
+            className={` ${
+              theme === "sunset" ? "bg-block" : ""
+            } focus:outline-none`}
           >
             Sunset
           </button>
           <button
             type="button"
-            onClick={() => mSetTheme("vanilla")}
-            className={` ${theme === "vanilla" ? "bg-block" : ""} focus:outline-none`}
+            onClick={() => setTheme("vanilla")}
+            className={` ${
+              theme === "vanilla" ? "bg-block" : ""
+            } focus:outline-none`}
           >
             Vanilla
           </button>

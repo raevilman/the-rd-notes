@@ -173,18 +173,28 @@ and I am passing both `theme` and `setTheme` to `Header.js`, where I have implem
 ### Persist the theme !
 
 For persisting the user selected theme value, I am using `localStorage`.  
-I have added a wrapper method in `Header.js` to store the theme in `localStorage` every time it is changed as below:  
+
+For writing to `localStorage` I am using `useEffect` on `theme` const in `Layout.js` as below:  
 ```js
-function mSetTheme(themeValue) {
-    localStorage.setItem('theme', themeValue)
-    setTheme(themeValue)
-  }
+useEffect(() => {
+    window.localStorage.setItem("theme", theme);
+  }, [theme]);
 ```
 
-in result, I have changed the initialization of the theme state to below:  
+and theme const is being initialized as below:  
 ```js
-const [theme, setTheme] = useState(localStorage.getItem('theme')? localStorage.getItem('theme'):'vanilla');
+const [theme, setTheme] = useState(() => {
+    if (typeof window !== `undefined`) {
+      return localStorage.getItem("theme") ? localStorage.getItem("theme") : "vanilla";
+    }
+  });
 ```
+> Using checks on `window` because web APIs are not available while SSR (server side rendering)  
+
+
+
+Thats all folks!  
+HIH
 ---  
 Resources
 
