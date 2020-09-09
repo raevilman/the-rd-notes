@@ -3,7 +3,7 @@ title: 'Building a markdown blog'
 description: 'Building a blog using GatsbyJs fueled by markdown files'
 slug: '/building-a-markdown-blog'
 date_created: '2020-07-17'
-date_modified: '2020-09-05'
+date_modified: '2020-09-09'
 author: 'RD'
 is_published: true
 show_in_recent: true
@@ -56,6 +56,8 @@ Below are the steps, which have been implemented on this site
 10. [Enable Gatsby incremental builds in Netlify](/building-a-markdown-blog/enable-gatsby-incremental-builds-in-netlify)
 11. [Fix webpage title and favicon](/building-a-markdown-blog/fix-webpage-title-and-favicon)
 12. [Adding a Header](/building-a-markdown-blog/add-header)
+13. [PostCSS Import](/building-a-markdown-blog/postcss-import)
+14. [Theming with tailwind](/building-a-markdown-blog/theming-with-tailwind)
 
 upcoming
 

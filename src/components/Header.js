@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 
-function Header() {
+function Header({ theme, setTheme }) {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -30,19 +30,26 @@ function Header() {
               {isMenuOpen && (
                 <path
                   // cross
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M6 18L18 6M6 6l12 12"
                 />
               )}
               {!isMenuOpen && (
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
                 />
+                // <path
+                // // ellipses
+                //   stroke-linecap="round"
+                //   stroke-linejoin="round"
+                //   stroke-width="2"
+                //   d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                // />
                 // <path
                 // // ham menu
                 //   stroke-linecap="round"
@@ -58,26 +65,29 @@ function Header() {
       <div
         className={`${
           !isMenuOpen ? "hidden" : ""
-        } flex flex-col items-center sm:items-end`}
+        } flex justify-between flex-row-reverse items-center sm:items-end bg-content rounded px-8 py-4`}
       >
-        <Link
-          href="#"
-          className="block px-2 py-1 mt-1 font-semibold no-underline hover:underline"
-        >
-          About
-        </Link>
-        <Link
-          href="#"
-          className="block px-2 py-1 mt-1 font-semibold no-underline hover:underline"
-        >
-          Placeholder 1
-        </Link>
-        <Link
-          href="#"
-          className="block px-2 py-1 mt-1 font-semibold no-underline hover:underline"
-        >
-          Placeholder 2
-        </Link>
+        <div className="flex flex-col">
+          <span className="text-xl font-medium pb-2">Themes</span>
+          <button
+            type="button"
+            onClick={() => setTheme("sunset")}
+            className={` ${
+              theme === "sunset" ? "bg-block" : ""
+            } focus:outline-none`}
+          >
+            Sunset
+          </button>
+          <button
+            type="button"
+            onClick={() => setTheme("vanilla")}
+            className={` ${
+              theme === "vanilla" ? "bg-block" : ""
+            } focus:outline-none`}
+          >
+            Vanilla
+          </button>
+        </div>
       </div>
     </nav>
   );
