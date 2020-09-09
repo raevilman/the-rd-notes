@@ -202,4 +202,4 @@ Resources
 
 ---
 
-This [GitHub commit](https://github.com/raevilman/the-rd-notes/commit/434b9e9512ffa7ab33babab2620fa1fc8c77cc4b) represents what we've done in this post 🤩
+These GitHub [commit 1](https://github.com/raevilman/the-rd-notes/commit/434b9e9512ffa7ab33babab2620fa1fc8c77cc4b), [commit 2](https://github.com/raevilman/the-rd-notes/pull/7/commits/e71c8580f4aa8ae399cb627d7fe954443a82fa0e) represents what we've done in this post 🤩
