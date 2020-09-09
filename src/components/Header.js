@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
 
 function Header({ theme, setTheme }) {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [bgSunset, setBgSunset] = useState("")
+  const [bgVanilla, setBgVanilla] = useState("")
+  useEffect(() => {
+    setBgSunset(theme === "sunset" ? "bg-block" : "")
+    setBgVanilla(theme === "vanilla" ? "bg-block" : "")
+  }, [theme]);
 
   return (
     <nav className="">
@@ -72,18 +78,14 @@ function Header({ theme, setTheme }) {
           <button
             type="button"
             onClick={() => setTheme("sunset")}
-            className={` ${
-              theme === "sunset" ? "bg-block" : ""
-            } focus:outline-none`}
+            className={`${bgSunset} focus:outline-none`}
           >
             Sunset
           </button>
           <button
             type="button"
             onClick={() => setTheme("vanilla")}
-            className={` ${
-              theme === "vanilla" ? "bg-block" : ""
-            } focus:outline-none`}
+            className={`${bgVanilla} focus:outline-none`}
           >
             Vanilla
           </button>

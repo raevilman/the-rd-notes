@@ -133,17 +133,61 @@ Following is how I've assigned the bg colors:
 
 - theme class is assigned to the root `div` of `Layout.js`
 
-### Switch control
+### Persist the theme !
 
-I am using `useState` to store theme value in `Layout.js` with initial value set to `vanilla` as below:
+- `useState` hook is used to store theme value in `Layout.js` with initial value set to `vanilla`.
+- `localStorage` is used to persist the user selected theme value.
+- `window` object is being checked, because web APIs are not available while SSR (server side rendering)
+- `useEffect` hook is used to write to `localStorage` and set the `themeName` to render the correct theme on first load.
+
+So below is content of `Layout.js`:
 
 ```js
-const [theme, setTheme] = useState("vanilla");
+function Layout({ children, title }) {
+  const [theme, setTheme] = useState(() => {
+    if (typeof window !== `undefined`) {
+      let themeLS = localStorage.getItem("theme")
+        ? localStorage.getItem("theme")
+        : "vanilla";
+      return themeLS;
+    } else {
+      return "vanilla";
+    }
+  });
+  const [themeName, setThemeName] = useState("theme-vanilla");
+
+  useEffect(() => {
+    window.localStorage.setItem("theme", theme);
+    setThemeName(`theme-${theme}`);
+  }, [theme]);
+
+  return (
+    <div className={`${themeName} bg-html text-default`}>
+      <Helmet title={title} />
+      <div className="w-full max-w-4xl mx-auto flex flex-col min-h-screen font-sans">
+        <Header theme={theme} setTheme={setTheme} />
+        <main className="flex-1 px-2 py-2">{children}</main>
+      </div>
+    </div>
+  );
+}
 ```
 
-and I am passing both `theme` and `setTheme` to `Header.js`, where I have implemented the controls to switch the theme:
+### Switch control
+
+I am passing both `theme` and `setTheme` to `Header.js`, where I have implemented the controls to switch the theme:
 
 ```js
+const [bgSunset, setBgSunset] = useState("")
+const [bgVanilla, setBgVanilla] = useState("")
+useEffect(() => {
+  setBgSunset(theme === "sunset" ? "bg-block" : "")
+  setBgVanilla(theme === "vanilla" ? "bg-block" : "")
+}, [theme]);
+
+...
+...
+
 <div
   className={`${
     !isMenuOpen ? "hidden" : ""
@@ -154,48 +198,28 @@ and I am passing both `theme` and `setTheme` to `Header.js`, where I have implem
     <button
       type="button"
       onClick={() => setTheme("sunset")}
-      className={` ${theme === "sunset" ? "bg-block" : ""} focus:outline-none`}
+      className={`${bgSunset} focus:outline-none`}
     >
       Sunset
     </button>
     <button
       type="button"
       onClick={() => setTheme("vanilla")}
-      className={` ${theme === "vanilla" ? "bg-block" : ""} focus:outline-none`}
+      className={`${bgVanilla} focus:outline-none`}
     >
       Vanilla
     </button>
   </div>
 </div>
 ```
-> Please refer to the full code if required in GitHub commit mentioned at the end of this note.  
 
-### Persist the theme !
-
-For persisting the user selected theme value, I am using `localStorage`.  
-
-For writing to `localStorage` I am using `useEffect` on `theme` const in `Layout.js` as below:  
-```js
-useEffect(() => {
-    window.localStorage.setItem("theme", theme);
-  }, [theme]);
-```
-
-and theme const is being initialized as below:  
-```js
-const [theme, setTheme] = useState(() => {
-    if (typeof window !== `undefined`) {
-      return localStorage.getItem("theme") ? localStorage.getItem("theme") : "vanilla";
-    }
-  });
-```
-> Using checks on `window` because web APIs are not available while SSR (server side rendering)  
-
-
+> Please refer to the full code if required in GitHub commit mentioned at the end of this note.
 
 Thats all folks!  
 HIH
----  
+
+---
+
 Resources
 
 - Sunset color code: https://medium.com/greatnote/kindle-sepia-color-code-1fed14b1a5ef
