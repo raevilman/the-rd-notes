@@ -26,8 +26,3 @@
   --color-text-default: #f6f4f1;
 }
 
-@font-face{
-  font-family: 'Rudiment';
-  src: local('Rudiment'), url(../fonts/FrederickatheGreat-Regular.ttf);
-}
-
