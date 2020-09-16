@@ -20,9 +20,9 @@ function Layout({ children, title }) {
   }, [theme]);
 
   return (
-    <div className={`${themeName} bg-html text-default`}>
+    <div className={`${themeName} bg-html text-default font-sans`}>
       <Helmet title={title} />
-      <div className="w-full max-w-4xl mx-auto flex flex-col min-h-screen font-sans">
+      <div className="w-full max-w-4xl mx-auto flex flex-col min-h-screen">
         <Header theme={theme} setTheme={setTheme} />
         <main className="flex-1 px-2 py-2">{children}</main>
       </div>

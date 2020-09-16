@@ -26,7 +26,7 @@ export default ({ data }) => {
                 is_project && (
                   <>
                     <Link to={slug}>{title}</Link>
-                    <p className="text-gray-800">{description}</p>
+                    <p>{description}</p>
                     <br />
                   </>
                 )
@@ -50,7 +50,7 @@ export default ({ data }) => {
                   <>
                     <p className="text-gray-600 text-xs">{date_modified}</p>
                     <Link to={slug}>{title}</Link>
-                    <p className="text-gray-800">{description}</p>
+                    <p>{description}</p>
                     <br />
                   </>
                 )
