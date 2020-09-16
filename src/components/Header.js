@@ -3,12 +3,6 @@ import { Link } from "gatsby";
 
 function Header({ theme, setTheme }) {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const [bgSunset, setBgSunset] = useState("")
-  const [bgVanilla, setBgVanilla] = useState("")
-  useEffect(() => {
-    setBgSunset(theme === "sunset" ? "bg-block" : "")
-    setBgVanilla(theme === "vanilla" ? "bg-block" : "")
-  }, [theme]);
 
   return (
     <nav className="">
@@ -74,21 +68,19 @@ function Header({ theme, setTheme }) {
         } flex justify-between flex-row-reverse items-center sm:items-end bg-content rounded px-8 py-4`}
       >
         <div className="flex flex-col">
-          <span className="text-xl font-medium pb-2">Themes</span>
-          <button
-            type="button"
-            onClick={() => setTheme("sunset")}
-            className={`${bgSunset} focus:outline-none`}
-          >
-            Sunset
-          </button>
-          <button
-            type="button"
-            onClick={() => setTheme("vanilla")}
-            className={`${bgVanilla} focus:outline-none`}
-          >
-            Vanilla
-          </button>
+          <span className="text-xl font-medium pb-2 text-right">Themes</span>
+          {["vanilla", "tang", "cappuccino"].map((themeName, index) => {
+            return (
+              <button
+                type="button"
+                key={index}
+                onClick={() => setTheme(themeName)}
+                className={`${theme === themeName ? "bg-block" : ""} focus:outline-none text-right px-1`}
+              >
+                {themeName.charAt(0).toUpperCase()+themeName.slice(1)}
+              </button>
+            );
+          })}
         </div>
       </div>
     </nav>

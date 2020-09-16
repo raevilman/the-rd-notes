@@ -79,7 +79,7 @@ This is the fun part 🤩, where I get to play with colors to define different t
 I am going to define two themes for now (may be more later bcz its fun):
 
 - Vanilla (plain, default, basic white-gray based theme)
-- Sunset (kindle inspired theme)
+- Tang
 
 And we'll assign color to each decided part per theme.
 
@@ -93,11 +93,11 @@ For this I've added following to a new file `src/css/themes.css`:
   --color-text-default: theme("colors.gray.900");
 }
 
-.theme-sunset {
-  --color-bg-html: #fbf5e9;
-  --color-bg-content: #fbf0d9;
-  --color-bg-block: #fbe5b5;
-  --color-text-default: #5f4b32;
+.theme-tang {
+  --color-bg-html: #fffcf9;
+  --color-bg-content: #fff4e8;
+  --color-bg-block: #ffddbb;
+  --color-text-default: #553344;
 }
 ```
 
@@ -119,7 +119,7 @@ We are all set to use the themes now. We just need to target the right html elem
 So basically, we need to assign `className` for:
 
 - 4 background colors (`bg-html`, `bg-content`, `bg-block`, `text-default`)
-- 1 theme name (`theme-vanilla` or `theme-sunset`)
+- 1 theme name (`theme-vanilla` or `theme-tang`)
 
 #### bg colors
 
@@ -178,52 +178,93 @@ function Layout({ children, title }) {
 I am passing both `theme` and `setTheme` to `Header.js`, where I have implemented the controls to switch the theme:
 
 ```js
-const [bgSunset, setBgSunset] = useState("")
-const [bgVanilla, setBgVanilla] = useState("")
-useEffect(() => {
-  setBgSunset(theme === "sunset" ? "bg-block" : "")
-  setBgVanilla(theme === "vanilla" ? "bg-block" : "")
-}, [theme]);
+import React, { useState, useEffect } from "react";
+import { Link } from "gatsby";
 
-...
-...
+function Header({ theme, setTheme }) {
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
-<div
-  className={`${
-    !isMenuOpen ? "hidden" : ""
-  } flex justify-between flex-row-reverse items-center sm:items-end bg-content rounded px-8 py-4`}
->
-  <div className="flex flex-col">
-    <span className="text-xl font-medium pb-2">Themes</span>
-    <button
-      type="button"
-      onClick={() => setTheme("sunset")}
-      className={`${bgSunset} focus:outline-none`}
-    >
-      Sunset
-    </button>
-    <button
-      type="button"
-      onClick={() => setTheme("vanilla")}
-      className={`${bgVanilla} focus:outline-none`}
-    >
-      Vanilla
-    </button>
-  </div>
-</div>
+  return (
+    <nav className="">
+      <div className="flex items-center justify-between px-2 py-3 ">
+        <div className="">
+          <h2>
+            <Link className="no-underline" to="/">
+              theRDnotes
+            </Link>
+          </h2>
+        </div>
+        <div className="">
+          <button
+            type="button"
+            className="block text-gray-600 focus:outline-none"
+            onClick={() => setMenuOpen(!isMenuOpen)}
+          >
+            <svg
+              className="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              {isMenuOpen && (
+                <path
+                  // cross
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              )}
+              {!isMenuOpen && (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                />
+              )}
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        className={`${
+          !isMenuOpen ? "hidden" : ""
+        } flex justify-between flex-row-reverse items-center sm:items-end bg-content rounded px-8 py-4`}
+      >
+        <div className="flex flex-col">
+          <span className="text-xl font-medium pb-2 text-right">Themes</span>
+          {["vanilla", "tang", "cappuccino"].map((themeName, index) => {
+            return (
+              <button
+                type="button"
+                key={index}
+                onClick={() => setTheme(themeName)}
+                className={`${
+                  theme === themeName ? "bg-block" : ""
+                } focus:outline-none text-right px-1`}
+              >
+                {themeName.charAt(0).toUpperCase() + themeName.slice(1)}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+export default Header;
 ```
 
-> Please refer to the full code if required in GitHub commit mentioned at the end of this note.
 
 Thats all folks!  
 HIH
 
 ---
-
-Resources
-
-- Sunset color code: https://medium.com/greatnote/kindle-sepia-color-code-1fed14b1a5ef
-
----
-
-These GitHub [commit 1](https://github.com/raevilman/the-rd-notes/commit/434b9e9512ffa7ab33babab2620fa1fc8c77cc4b), [commit 2](https://github.com/raevilman/the-rd-notes/pull/7/commits/e71c8580f4aa8ae399cb627d7fe954443a82fa0e), [commit 3](https://github.com/raevilman/the-rd-notes/commit/023daa6b74cc0cd25a744daa91d0b10cb6a55e67) represents what we've done in this post 🤩
+Following are the GitHub commits which represents what we've done in this post 🤩  
+- [commit 1](https://github.com/raevilman/the-rd-notes/commit/434b9e9512ffa7ab33babab2620fa1fc8c77cc4b)  
+- [commit 2](https://github.com/raevilman/the-rd-notes/pull/7/commits/e71c8580f4aa8ae399cb627d7fe954443a82fa0e)
+- [commit 3](https://github.com/raevilman/the-rd-notes/commit/023daa6b74cc0cd25a744daa91d0b10cb6a55e67)
+- [commit 4](https://github.com/raevilman/the-rd-notes/commit/5cdffc41b2b9eb8cfb1db992dfc450068fb6a887)
