@@ -1,9 +1,9 @@
 ---
-title: 'aws lambda deployer'
+title: 'AWS Lambda Deployer'
 description: 'a plugin to deploy aws lambda right from IntelliJ IDEA'
 slug: '/projects/aws-lambda-deployer'
 date_created: '2020-07-18'
-date_modified: '2020-07-18'
+date_modified: '2020-09-11'
 author: 'RD'
 is_published: true
 show_in_recent: true
@@ -15,7 +15,7 @@ Leveraging [AWS Lambdas](https://aws.amazon.com/lambda/) for coding microservice
 
 but deploying them after making changes is a bit brain tiring loop. therefore i developed a plugin for IntelliJ IDEA.
 
-old routine 🤕, dealing with lambda
+## Old routine 🤕, dealing with lambda
 
 ```
 Open IntelliJ
@@ -35,7 +35,7 @@ Open IntelliJ
             ↳ <Repeat till EOD>
 ```
 
-new routine 🤩  
+## New routine 🤩  
 
 ```
 Open IntelliJ
@@ -45,13 +45,16 @@ Open IntelliJ
     ↳ <Repeat till EOD>
 ```
 
-🎄bonus: this plugin also helps in case you are dealing with multiple [AWS Named Profiles](http://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html) or [AWS Organization](https://aws.amazon.com/organizations/)  
+## Bonus 🎄  
 
+this plugin also helps in case you are dealing with multiple [AWS Named Profiles](http://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html) or [AWS Organization](https://aws.amazon.com/organizations/)   
 
-## demo video
+## Demo video 
 
 [YouTube link](https://youtu.be/FgwptHeace4)
 
-## IntelliJ plugin repo link
+## Link
 
 https://plugins.jetbrains.com/plugin/14742-aws-lambda-deployer
+
+
