@@ -263,8 +263,14 @@ Thats all folks!
 HIH
 
 ---
+Resources:  
+
+- Color schemes: [Kindle](https://medium.com/greatnote/kindle-sepia-color-code-1fed14b1a5ef), [BlackCurrant](https://www.schemecolor.com/black-currant-ice-cream.php)
+
+---
 Following are the GitHub commits which represents what we've done in this post 🤩  
-- [commit 1](https://github.com/raevilman/the-rd-notes/commit/434b9e9512ffa7ab33babab2620fa1fc8c77cc4b)  
-- [commit 2](https://github.com/raevilman/the-rd-notes/pull/7/commits/e71c8580f4aa8ae399cb627d7fe954443a82fa0e)
-- [commit 3](https://github.com/raevilman/the-rd-notes/commit/023daa6b74cc0cd25a744daa91d0b10cb6a55e67)
-- [commit 4](https://github.com/raevilman/the-rd-notes/commit/933d82e0e165498f25a81d6216eb8b193cdbcbeb)
+- [commit 1](https://github.com/raevilman/the-rd-notes/commit/434b9e9512ffa7ab33babab2620fa1fc8c77cc4b) - Implements theming with tailwind  
+- [commit 2](https://github.com/raevilman/the-rd-notes/pull/7/commits/e71c8580f4aa8ae399cb627d7fe954443a82fa0e) - Fixes localStorage ain't available while ssr
+- [commit 3](https://github.com/raevilman/the-rd-notes/commit/023daa6b74cc0cd25a744daa91d0b10cb6a55e67) - Fixes correct theme not rendering on initial load
+- [commit 4](https://github.com/raevilman/the-rd-notes/commit/933d82e0e165498f25a81d6216eb8b193cdbcbeb) - generate theme button in loop and redefine theme colors
+- [commit 5](https://github.com/raevilman/the-rd-notes/commit/1dc736543cd637446ff867a7daf2ab9ae2a2675b) - adds new theme blackcurrant and some more theme color vars 
