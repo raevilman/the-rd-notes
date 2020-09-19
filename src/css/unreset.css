@@ -5,7 +5,7 @@ a {
     @apply my-4;
   }
   code {
-    @apply rounded p-1 font-mono font-light text-red-800 text-sm bg-block;
+    @apply rounded p-1 font-mono font-light text-code text-sm bg-block;
   }
   pre code {
       @apply block overflow-x-scroll p-3 text-current;

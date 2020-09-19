@@ -6,8 +6,8 @@ function NotesLayout({ children, frontmatter }) {
   return (
     <>
       <Layout title={frontmatter.title}>
-        <p className="text-sm">{frontmatter.date_modified}</p>
-        <h1>{frontmatter.title}</h1>
+        <p className="text-sm  text-invert">{frontmatter.date_modified}</p>
+        <h1 className="text-invert">{frontmatter.title}</h1>
         <Content>
             {children}
         </Content>

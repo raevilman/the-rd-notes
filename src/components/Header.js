@@ -9,7 +9,7 @@ function Header({ theme, setTheme }) {
       <div className="flex items-center justify-between px-2 py-3 ">
         <div className="">
           <h2>
-            <Link className="no-underline" to="/">
+            <Link className="no-underline text-invert" to="/">
               theRDnotes
             </Link>
           </h2>
@@ -69,7 +69,7 @@ function Header({ theme, setTheme }) {
       >
         <div className="flex flex-col">
           <span className="text-xl font-medium pb-2 text-right">Themes</span>
-          {["vanilla", "tang", "cappuccino"].map((themeName, index) => {
+          {["vanilla", "tang", "cappuccino", "blackcurrant"].map((themeName, index) => {
             return (
               <button
                 type="button"

@@ -9,7 +9,7 @@ export default ({ data }) => {
     <div>
       <Layout title="theRDnotes">
         <section className="text-center">
-          <h1>Hey! <Emoji emoji="👋" label="wave"/></h1>
+          <h1 className="text-invert">Hey! <Emoji emoji="👋" label="wave"/></h1>
         </section>
         <Content>
         <section className="mt-12">
@@ -48,7 +48,7 @@ export default ({ data }) => {
               return (
                 !is_project && (
                   <>
-                    <p className="text-gray-600 text-xs">{date_modified}</p>
+                    <p className="text-xs">{date_modified}</p>
                     <Link to={slug}>{title}</Link>
                     <p>{description}</p>
                     <br />

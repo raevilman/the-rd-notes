@@ -7,6 +7,8 @@ module.exports = {
     extend: {
       textColor: {
         default: "var(--color-text-default)",
+        code: "var(--color-text-code)",
+        invert: "var(--color-text-invert)",
       },
       backgroundColor: {
         html: "var(--color-bg-html)",
