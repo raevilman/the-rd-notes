@@ -67,7 +67,7 @@ export default ({ data }) => {
 export const query = graphql`
   query SiteIndexQuery {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date_modified]}
+      sort: { fields: [frontmatter___date_modified], order: DESC}
       filter: {
         frontmatter: {
           is_published: { eq: true }
