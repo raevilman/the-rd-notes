@@ -259,6 +259,9 @@ export default Header;
 ```
 
 
+#### FOUC
+I am aware of [flash of unstyled content (FOUC)](https://en.wikipedia.org/wiki/Flash_of_unstyled_content). But thats may be for some other time to fix!  
+
 Thats all folks!  
 HIH
 

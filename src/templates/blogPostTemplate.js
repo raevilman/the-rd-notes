@@ -16,6 +16,7 @@ query PostsBySlug($slug: String!) {
       html
       frontmatter {
         title
+        slug
         date_modified(formatString: "YYYY MMMM Do")
       }
     }
