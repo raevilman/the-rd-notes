@@ -2,4 +2,5 @@
 @import 'unreset.css';
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import "themes.css"
+@import "themes.css";
+@import "custom.css";
