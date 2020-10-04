@@ -1,5 +1,12 @@
 {
+    "editor.minimap.enabled": false,
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "[markdown]": {
+        "editor.wordWrap": "on"
+    },
     "cSpell.words": [
+        "cmder",
         "frontmatter",
         "intelli",
         "intelli j",
