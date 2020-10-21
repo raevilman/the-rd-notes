@@ -5,7 +5,7 @@ slug: '/setup-vs-code'
 date_created: '2020-10-04'
 date_modified: '2020-10-04'
 author: 'RD'
-is_published: true
+is_published: false
 show_in_recent: true
 is_project: false
 tags: vs-code, setup

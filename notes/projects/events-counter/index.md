@@ -5,7 +5,7 @@ slug: '/projects/events-counter'
 date_created: '2020-09-21'
 date_modified: '2020-09-21'
 author: 'RD'
-is_published: true
+is_published: false
 show_in_recent: true
 is_project: true
 ---

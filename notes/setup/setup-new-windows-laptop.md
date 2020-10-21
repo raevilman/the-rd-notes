@@ -5,7 +5,7 @@ slug: '/setup-new-windows-laptop'
 date_created: '2020-10-04'
 date_modified: '2020-10-04'
 author: 'RD'
-is_published: true
+is_published: false
 show_in_recent: true
 is_project: false
 tags: windows, laptop, setup
@@ -17,6 +17,7 @@ Below are the steps in order:
 - User directory
 - Uninstall bloatware
 - Update system
+- Partition drive
 - Installations
 - Configurations
 - Issues
@@ -52,6 +53,50 @@ I remember uninstalling:
 
 Put the system to download and install updates. Restarted it and then again put it on updates. After one or two restarts, the system was fully updated.  
 
+## Partition the drive
+Simple reason, I don't want the user data to participate when backing up the system. Which can result in huge backup files.  
+
+After giving it a thought for some time, I decided that I need four partitions:  
+- System
+- Code
+- Programs
+- Data
+
+### System
+This partition is for the Windows OS.  
+### Code
+Home for all the source code I'll be dealing with.  
+It will have folders like:
+- git
+  - raevilman
+    - my repos
+  - clones
+    - other users repos
+- local
+  - experimental code
+
+Plus it will also store:  
+- Docker volumes
+- Virtual disks for VirtualBox etc
+- etc
+
+### Programs
+This is where I'll install heavy programs like games etc. So that the system drive is not overloaded.
+
+### Data
+Personal data goes here. Music, Movies, Photos etc etc etc
+
+Bring up the calculator!  
+
+With the total of 952GB of storage. Below is how I've distributed the space among four partitions:  
+
+- System - 250GB
+- Code - 100GB
+- Programs - 200GB
+- Data - 400GB
+
+> 140GB is already taken by Fortnite and Apex Legends in the Programs partition 😯
+
 ## Installations
 
 ### Antivirus
@@ -79,6 +124,12 @@ Setting up git includes:
 - Configure user profile.  
 
 Check the guide [here](/setup-git-on-windows)
+
+### Other Utility Softwares
+
+#### 7-Zip
+The free and open source file archiver. Download from [here](https://www.7-zip.org/download.html).
+
 
 ## Configurations
 
