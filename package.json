@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/raevilman/the-rd-notes#readme",
   "dependencies": {
-    "gatsby": "^2.24.63",
+    "gatsby": "^2.24.84",
     "gatsby-plugin-env-variables": "^2.0.0",
     "gatsby-plugin-manifest": "^2.4.30",
     "gatsby-plugin-postcss": "^2.3.12",
