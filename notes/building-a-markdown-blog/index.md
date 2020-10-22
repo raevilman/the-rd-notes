@@ -58,6 +58,7 @@ Below are the steps, which have been implemented on this site
 12. [Adding a Header](/building-a-markdown-blog/add-header)
 13. [PostCSS Import](/building-a-markdown-blog/postcss-import)
 14. [Theming with tailwind](/building-a-markdown-blog/theming-with-tailwind)
+15. [Firebase Analytics](/building-a-markdown-blog/firebase-analytics)
 
 upcoming
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import Header from "./Header";
+import firebase from "gatsby-plugin-firebase"
 
 function Layout({ children, title }) {
   const [theme, setTheme] = useState(() => {
@@ -13,6 +14,15 @@ function Layout({ children, title }) {
     }
   });
   const [themeName, setThemeName] = useState("theme-vanilla")
+
+  useEffect(() => {
+    firebase
+      .analytics()
+      .setCurrentScreen(window.location.pathname) // sets `screen_name` parameter
+    firebase
+      .analytics()
+      .logEvent(title)
+  }, []);
 
   useEffect(() => {
     window.localStorage.setItem("theme", theme);

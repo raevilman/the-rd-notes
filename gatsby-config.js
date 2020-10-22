@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 const siteMetadata = {
   title: `theRDnotes`,
   description: `my digital notebook...`,
@@ -45,6 +48,22 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/favicon.png`
       },
-    }
+    },
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: { 
+      credentials: {
+          apiKey: process.env.REACT_APP_FIREBASE_WEB_API_KEY
+          ,
+          // authDomain: "<auth-domain>",
+          // databaseURL: "<db-url>",
+          projectId: process.env.REACT_APP_FIREBASE_WEB_PROJECT_ID,
+          // storageBucket: "<storage-bucket>",
+          // messagingSenderId: "<msg-sender-id>",
+          appId: process.env.REACT_APP_FIREBASE_WEB_APP_ID,
+          // measurementId: "<-measurement-id>"
+      }
+      }
+  },
   ],
 };
