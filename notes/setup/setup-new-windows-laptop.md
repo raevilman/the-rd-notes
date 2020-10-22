@@ -145,6 +145,17 @@ The free and open source file archiver. Download from [here](https://www.7-zip.o
 
 
 ## Configurations
+- Explorer View
+  - Item check boxes
+  - Show file extensions
+  - Show hidden files  
+  
+  ![Show hidden files and extensions](./show-hidden-and-extensions.png)  
+
+- Do nothing on lid close  
+ 
+  ![Windows power settings](./windows-power-settings.png)   
+
 
 ## Issues
 
