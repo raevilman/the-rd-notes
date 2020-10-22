@@ -5,7 +5,7 @@ slug: '/setup-git-on-windows'
 date_created: '2020-10-04'
 date_modified: '2020-10-04'
 author: 'RD'
-is_published: false
+is_published: true
 show_in_recent: true
 tags: vs-code, setup, windows
 ---

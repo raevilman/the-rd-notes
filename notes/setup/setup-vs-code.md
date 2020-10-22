@@ -5,7 +5,7 @@ slug: '/setup-vs-code'
 date_created: '2020-10-04'
 date_modified: '2020-10-04'
 author: 'RD'
-is_published: false
+is_published: true
 show_in_recent: true
 is_project: false
 tags: vs-code, setup
@@ -48,6 +48,8 @@ Below is how the `settings.json`'s content looks like:
 
 - Markdown All in One ([Link](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one))
 - Code Spell Checker ([Link](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker))
+- Vetur [Link](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+- Tailwind CSS IntelliSense [Link](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
 I usually maintain the list of extensions useful for the current workspace in a file named `extensions.json` placed under `.vscode`.  
 This way VS Code notifies the user about these extensions for this repo when the user checks out the project from GitHub.  
