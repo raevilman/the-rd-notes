@@ -106,8 +106,8 @@ Download and set this as default under Settings > Apps >  Default Apps
 
 ### Terminal
 
-I prefer to use [Cmder](https://cmder.net/) over CMD or PowerShell.  
-Check the guide to setup Cmder [here](/setup-cmder-terminal).
+I am using [Hyper](https://hyper.is/) these days. ~~prefer to use [Cmder](https://cmder.net/) over CMD or PowerShell. ~Check the guide to setup Cmder [here](/setup-cmder-terminal).~~  
+Check the guide to setup Hyper with ZSH [here](/setup-hyper-terminal-with-zsh-on-windows).
 
 ### IDEs
 - VS Code.  
@@ -142,6 +142,9 @@ Download from [here](https://insomnia.rest/download)
 
 - 7-Zip  
 The free and open source file archiver. Download from [here](https://www.7-zip.org/download.html).
+
+- Dell Display Manager  
+  To manage external monitor.
 
 
 ## Configurations
