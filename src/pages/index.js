@@ -25,8 +25,8 @@ export default ({ data }) => {
               return (
                 is_project && (
                   <>
-                    <Link to={slug}>{title}</Link>
-                    <p>{description}</p>
+                    <Link to={slug}><p className="text-gray-900 text-xl">{title}</p></Link>
+                    <p className="text-gray-700 text-sm">{description}</p>
                     <br />
                   </>
                 )
@@ -35,7 +35,7 @@ export default ({ data }) => {
           </div>
         </section>
         <section>
-          <h3> Recent Posts!</h3>
+          <h3>Series</h3>
           <div className="px-4 py-2">
             {data.allMarkdownRemark.edges.map((post) => {
               const {
@@ -44,13 +44,39 @@ export default ({ data }) => {
                 slug,
                 date_modified,
                 is_project,
+                is_series
               } = post.node.frontmatter;
               return (
-                !is_project && (
+                !is_project && is_series && (
+                  <>
+                    <p className="text-xs">Last updated: {date_modified}</p>
+                    <Link to={slug}><p className="text-xl">{title}</p></Link>
+                    <p className="text-gray-700 text-sm">{description}</p>
+                    <br />
+                  </>
+                )
+              );
+            })}
+          </div>
+        </section>
+        <section>
+          <h3> Recent notes!</h3>
+          <div className="px-4 py-2">
+            {data.allMarkdownRemark.edges.map((post) => {
+              const {
+                title,
+                description,
+                slug,
+                date_modified,
+                is_project,
+                is_series
+              } = post.node.frontmatter;
+              return (
+                !is_project && !is_series && (
                   <>
                     <p className="text-xs">{date_modified}</p>
-                    <Link to={slug}>{title}</Link>
-                    <p>{description}</p>
+                    <Link to={slug}><p className="text-gray-900 text-xl">{title}</p></Link>
+                    <p className="text-gray-700 text-sm">{description}</p>
                     <br />
                   </>
                 )
@@ -88,6 +114,7 @@ export const query = graphql`
             is_published
             show_in_recent
             is_project
+            is_series
           }
         }
       }

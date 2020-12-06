@@ -3,10 +3,11 @@ title: 'Building a markdown blog'
 description: 'Building a blog using GatsbyJs fueled by markdown files'
 slug: '/building-a-markdown-blog'
 date_created: '2020-07-17'
-date_modified: '2020-09-09'
+date_modified: '2020-12-06'
 author: 'RD'
 is_published: true
 show_in_recent: true
+is_series: true
 ---
 
 ## Context

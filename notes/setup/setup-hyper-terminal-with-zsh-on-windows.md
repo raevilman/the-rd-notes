@@ -115,7 +115,7 @@ Install the recommended font 'Meslo Nerd Font':
 
 You can download the fonts from this [GitHub](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k) page.  
 
-After you have installed(open and click install button on top) the fonts, Open Hyper Terminal config file with `ctrl+,` and add 'MesloLGS NF,' in front of the existing value.  
+After you have installed(open and click install button on top) the fonts, Open Hyper Terminal config file with `ctrl+,` and add 'MesloLGS NF,' in front of the existing value for `fontFamily` key.  
 
 Now, for PowerLevel10k, you can follow the guide at https://github.com/romkatv/powerlevel10k
 
