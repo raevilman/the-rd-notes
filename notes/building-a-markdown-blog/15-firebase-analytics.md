@@ -78,4 +78,4 @@ useEffect(() => {
 
 ---
 Following are the GitHub commits which represents what we've done in this post 🤩  
-- [commit 1](https://github.com/raevilman/the-rd-notes/commit/8b4d31aea307c95d59b608d409da80d993ae715f) - Adds firebase analytics  
+- [commit 1](https://github.com/raevilman/the-rd-notes/commit/cb597250df5236e9cb2ce4733a8fcc9adcef7d50) - Adds firebase analytics  
