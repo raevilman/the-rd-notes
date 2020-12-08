@@ -2,7 +2,7 @@
 title: '12. Adding a Header'
 description: 'Lets add a header to our Gatsby blog'
 slug: '/building-a-markdown-blog/add-header'
-date_created: '2020-09-5'
+date_created: '2020-09-05'
 date_modified: '2020-09-05'
 author: 'RD'
 is_published: true
