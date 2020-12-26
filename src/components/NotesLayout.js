@@ -12,6 +12,14 @@ function NotesLayout({ children, frontmatter }) {
           </div>
         </div>
         <Content>{children}</Content>
+        <Content>
+          <h3>Helpful?</h3>
+          <p>
+          If you think this is helpful 🎈<br/>
+          Don't keep it to yourself 🙊 <br/><br/>
+          Share it with your <em>lovely</em> followers at <a href={'https://twitter.com/intent/tweet?text=Sharing an article I read, on \''+frontmatter.title+'\' by @raevilman &url='+window.location.href} target="_blank"><span className="italic">twitter</span></a> 🗽 
+          </p>
+        </Content>
       </Layout>
     </>
   );

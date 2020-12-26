@@ -34,7 +34,7 @@ function Layout({ children, title }) {
       <Helmet title={title} />
       <div className="w-full max-w-4xl mx-auto flex flex-col min-h-screen">
         <Header theme={theme} setTheme={setTheme} />
-        <main className="flex-1 px-2 py-2">{children}</main>
+        <main className="flex-1 px-2 py-2 flex flex-col gap-4">{children}</main>
       </div>
     </div>
   );
