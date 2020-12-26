@@ -1,11 +1,11 @@
 import React from "react";
 import NotesLayout from "../components/NotesLayout";
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   const { frontmatter, html } = data.markdownRemark;
   return (
     <>
-      <NotesLayout frontmatter={frontmatter}>
+      <NotesLayout frontmatter={frontmatter} location={location}>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </NotesLayout>
       <div className="flex justify-center gap-1 m-2 mb-4 ">
