@@ -2,6 +2,7 @@ import React from "react";
 import Content from "../components/Content";
 import Layout from "../components/Layout";
 import { EventsCounter, IconEmoji } from "react-events-counter";
+import "react-events-counter/dist/index.css";
 
 function NotesLayout({ children, frontmatter, location }) {
   return (
@@ -37,6 +38,7 @@ function NotesLayout({ children, frontmatter, location }) {
                 location.href
               }
               target="_blank"
+              rel="noreferrer"
             >
               <span className="italic">twitter</span>
             </a>{" "}
@@ -93,7 +95,14 @@ function NotesLayout({ children, frontmatter, location }) {
             />
             <div className="flex justify-end">
               <span className="text-xs text-gray-600">
-              powered by <a href="https://eventscounter.com" target="__blank">EventsCounter.com</a>
+                powered by
+                <a
+                  href="https://eventscounter.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  EventsCounter.com
+                </a>
               </span>
             </div>
           </div>
