@@ -10,7 +10,7 @@ export default ({ data, location }) => {
       </NotesLayout>
       <div className="flex justify-center gap-1 m-2 mb-4 ">
         <span className="text-gray-700">lets connect via</span>
-        <a href="https://twitter.com/raevilman" target="_blank" class="">
+        <a href="https://twitter.com/raevilman" target="_blank"  rel="noreferrer" class="">
           <span className="text-gray-800">twitter</span>
         </a>
       </div>
