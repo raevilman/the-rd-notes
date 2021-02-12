@@ -12,7 +12,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-env-variables`,
       options: {
-        allowList: ["REACT_APP_EVENTS_COUNTER_API_KEY"]
+        allowList: [
+          "REACT_APP_EVENTS_COUNTER_API_KEY",
+          "REACT_APP_EVENTS_COUNTER_API_URL",
+          "REACT_APP_EVENTS_COUNTER_DRY_RUN"
+        ]
       },
     },
     `gatsby-plugin-react-helmet`,
