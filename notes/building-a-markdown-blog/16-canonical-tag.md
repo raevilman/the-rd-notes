@@ -2,8 +2,8 @@
 title: "16. Canonical tag"
 description: "Adding canonical tag to pages on our blog"
 slug: "/building-a-markdown-blog/canonical-tag"
-date_created: "2020-06-12"
-date_modified: "2020-06-12"
+date_created: "2020-12-06"
+date_modified: "2020-12-06"
 author: "RD"
 is_published: false
 show_in_recent: false
