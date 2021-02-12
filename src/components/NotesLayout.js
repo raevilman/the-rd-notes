@@ -95,14 +95,12 @@ function NotesLayout({ children, frontmatter, location }) {
             />
             <div className="flex justify-end">
               <span className="text-xs text-gray-600">
-                powered by
+                powered by &nbsp;
                 <a
                   href="https://eventscounter.com"
                   target="_blank"
                   rel="noreferrer"
-                >
-                  EventsCounter.com
-                </a>
+                >EventsCounter.com</a>
               </span>
             </div>
           </div>
