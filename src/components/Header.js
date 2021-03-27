@@ -69,7 +69,7 @@ function Header({ theme, setTheme }) {
       >
         <div className="flex flex-col">
           <span className="text-xl font-medium pb-2 text-right">Themes</span>
-          {["vanilla", "tang", "cappuccino", "blackcurrant"].map((themeName, index) => {
+          {["vanilla", "tang", "cappuccino"].map((themeName, index) => {
             return (
               <button
                 type="button"

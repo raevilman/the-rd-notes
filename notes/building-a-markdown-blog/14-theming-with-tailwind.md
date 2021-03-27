@@ -268,7 +268,7 @@ HIH
 ---
 Resources:  
 
-- Color schemes: [Kindle](https://medium.com/greatnote/kindle-sepia-color-code-1fed14b1a5ef), [BlackCurrant](https://www.schemecolor.com/black-currant-ice-cream.php)
+- Color schemes: [Kindle](https://medium.com/greatnote/kindle-sepia-color-code-1fed14b1a5ef)
 
 ---
 Following are the GitHub commits which represents what we've done in this post 🤩  

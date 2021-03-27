@@ -23,12 +23,4 @@
   --color-text-code: --color-text-default;
 }
 
-.theme-blackcurrant {
-  --color-bg-html: #312B4C;
-  --color-bg-content: #A08BD0;
-  --color-bg-block: #C6C5E7;
-  --color-text-default: #312B4C;
-  --color-text-code: #312B4C;
-  --color-text-invert: #C6C5E7;
-}
 
