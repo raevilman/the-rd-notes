@@ -18,7 +18,7 @@ function NotesLayout({ children, currentPath, dirs, files }) {
                 return (
                   <>
                     <div id="dir" className=" flex gap-2 items-end ">
-                      <FaRegFolder className="bg-yellow-200" />
+                      <FaRegFolder className="bg-orange-200" />
                       <Link to={dir.name} className="">
                         <span className=" text-gray-900 text-lg">
                           {dir.name}
@@ -30,7 +30,7 @@ function NotesLayout({ children, currentPath, dirs, files }) {
               })}
             </div>
             {dirs.length>0 && files.length>0 && <hr class="border border-gray-200" />}
-            <div id="explorer" className="gap-4">
+            <div id="explorer" className="flex flex-col gap-3">
               {files.map((file, index) => {
                 const { title, slug } = file.node.frontmatter;
                 return (

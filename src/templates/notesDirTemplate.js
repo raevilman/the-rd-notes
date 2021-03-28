@@ -26,7 +26,7 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fields: { relativeDirectory: { eq: $relDir } } }
+      filter: {fields: {relativeDirectory: {eq: $relDir}}, frontmatter: {is_published: {eq: true}}}
       sort: {fields: frontmatter___order_in_series}
     ) {
       edges {

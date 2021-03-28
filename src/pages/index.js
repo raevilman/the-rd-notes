@@ -3,121 +3,35 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content from "../components/Content";
 import Emoji from "../components/Emoji";
+import { FaRegFileAlt, FaGithub, FaTwitter } from "react-icons/fa";
 
 export default ({ data }) => {
   return (
     <div>
       <Layout title="theRDnotes">
-        <section className="text-center">
-          <h1 className="text-invert">Hey! <Emoji emoji="👋" label="wave"/></h1>
-        </section>
-        <Content>
-        <section className="mt-12">
-          <h3>Projects</h3>
-          <div className="px-4 py-2">
-            {data.allMarkdownRemark.edges.map((post) => {
-              const {
-                title,
-                description,
-                slug,
-                is_project,
-              } = post.node.frontmatter;
-              return (
-                is_project && (
-                  <>
-                    <Link to={slug}><p className="text-gray-900 text-xl">{title}</p></Link>
-                    <p className="text-gray-700 text-sm">{description}</p>
-                    <br />
-                  </>
-                )
-              );
-            })}
+        <div className="min-h-screen flex justify-center items-center bg-gray-100">
+          <div className="flex flex-col gap-8">
+            <section className="border-l-2 border-orange-300 pl-2">
+              <FaRegFileAlt />
+              <Link to="/explorer">Notes Explorer</Link>
+            </section>
+            <div className="flex gap-6">
+            <section className="border-l-2 border-gray-700 pl-2">
+              <FaGithub />
+              <a href="https://github.com/raevilman" target="_blank">
+                GitHub
+              </a>
+            </section>
+            <section className="border-l-2 border-blue-400 pl-2">
+              <FaTwitter />
+              <a href="https://twitter.com/raevilman" target="_blank">
+                Twitter
+              </a>
+            </section>
+            </div>
           </div>
-        </section>
-        <section>
-          <h3>Series</h3>
-          <div className="px-4 py-2">
-            {data.allMarkdownRemark.edges.map((post) => {
-              const {
-                title,
-                description,
-                slug,
-                date_modified,
-                is_project,
-                is_series
-              } = post.node.frontmatter;
-              return (
-                !is_project && is_series && (
-                  <>
-                    <p className="text-xs">Last updated: {date_modified}</p>
-                    <Link to={slug}><p className="text-xl">{title}</p></Link>
-                    <p className="text-gray-700 text-sm">{description}</p>
-                    <br />
-                  </>
-                )
-              );
-            })}
-          </div>
-        </section>
-        <section>
-          <h3> Recent notes!</h3>
-          <div className="px-4 py-2">
-            {data.allMarkdownRemark.edges.map((post) => {
-              const {
-                title,
-                description,
-                slug,
-                date_modified,
-                is_project,
-                is_series
-              } = post.node.frontmatter;
-              return (
-                !is_project && !is_series && (
-                  <>
-                    <p className="text-xs">{date_modified}</p>
-                    <Link to={slug}><p className="text-gray-900 text-xl">{title}</p></Link>
-                    <p className="text-gray-700 text-sm">{description}</p>
-                    <br />
-                  </>
-                )
-              );
-            })}
-          </div>
-        </section>
-        </Content>
+        </div>
       </Layout>
     </div>
   );
 };
-
-export const query = graphql`
-  query SiteIndexQuery {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date_modified], order: DESC}
-      filter: {
-        frontmatter: {
-          is_published: { eq: true }
-          show_in_recent: { eq: true }
-        }
-      }
-    ) {
-      edges {
-        node {
-          id
-          excerpt
-          frontmatter {
-            title
-            description
-            slug
-            date_modified
-            author
-            is_published
-            show_in_recent
-            is_project
-            is_series
-          }
-        }
-      }
-    }
-  }
-`;
