@@ -8,6 +8,7 @@ author: 'RD'
 is_published: true
 show_in_recent: false
 is_project: false
+order_in_series: 11
 ---
 In this note we'll do the following:  
 - fix the web page title to render the name of current note

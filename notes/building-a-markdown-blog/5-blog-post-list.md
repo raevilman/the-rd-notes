@@ -7,6 +7,7 @@ date_modified: '2020-07-17'
 author: 'RD'
 is_published: true
 show_in_recent: false
+order_in_series: 5
 ---
 
 In this post, we will use GraphQL to fetch the details of our posts and show them as a list on index page.

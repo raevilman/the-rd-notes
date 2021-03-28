@@ -7,6 +7,7 @@ date_modified: '2020-07-18'
 author: 'RD'
 is_published: true
 show_in_recent: false
+order_in_series: 7
 ---
 
 Today we'll define the minimal layout for our blog.  

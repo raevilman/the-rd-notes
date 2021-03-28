@@ -8,6 +8,7 @@ author: 'RD'
 is_published: true
 show_in_recent: false
 is_project: false
+order_in_series: 9
 ---
 ## Theory
 In this note, we'll fix the issue of images not getting rendered.  

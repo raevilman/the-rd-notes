@@ -7,6 +7,7 @@ date_modified: '2020-07-17'
 author: 'RD'
 is_published: true
 show_in_recent: false
+order_in_series: 3
 ---
 
 GatsbyJs site can be configured using the file `gatsby-config.js`  

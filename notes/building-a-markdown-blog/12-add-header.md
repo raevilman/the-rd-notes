@@ -8,6 +8,7 @@ author: 'RD'
 is_published: true
 show_in_recent: false
 is_project: false
+order_in_series: 12
 ---
 ## Thoughts
 I have been thinking of adding a header for some time. But I didn't want the typical header you see on every website with logo, site name and links to other parts of the website.  

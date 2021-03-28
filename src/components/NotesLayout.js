@@ -1,6 +1,6 @@
 import React from "react";
-import Content from "../components/Content";
-import Layout from "../components/Layout";
+import Content from "./Content";
+import Layout from "./Layout";
 import { EventsCounter, IconEmoji } from "react-events-counter";
 import "react-events-counter/dist/index.css";
 

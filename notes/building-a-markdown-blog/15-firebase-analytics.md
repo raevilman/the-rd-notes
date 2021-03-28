@@ -8,6 +8,7 @@ author: "RD"
 is_published: true
 show_in_recent: false
 is_project: false
+order_in_series: 15
 ---
 
 Today, we'll add Firebase Analytics to our blog.  

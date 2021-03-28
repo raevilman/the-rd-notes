@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from 'gatsby';
 import NotesLayout from "../components/NotesLayout";
 
 export default ({ data, location }) => {
