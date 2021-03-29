@@ -5,7 +5,7 @@ slug: '/projects/events-counter'
 date_created: '2020-09-21'
 date_modified: '2020-09-21'
 author: 'RD'
-is_published: false
+is_published: true
 show_in_recent: true
 is_project: true
 ---
@@ -29,30 +29,38 @@ Two APIs:
 
 Thats it!
 
-## Current status 🗿
+## Current status 🗿  
 
-Done: ✅  
-- API development
-- Basic react library. [GitHub link](https://github.com/raevilman/react-events-counter)
-- Test run, I have incorporated them here in this blog.  
+Done: 
+- ✅  API development
+- ✅  Website with dashboard. [EventsCounter.com](http://eventscounter.com/)
+- ✅  Basic react library. [GitHub link](https://github.com/Events-Counter/react-events-counter)
+
+<br/>
 
 Next: 👨‍💻  
-- Dashboard (SPA website)
-- Vue library
+- ✨ Rules functionality
+- 📅 VueJs library
+- 📅 Js library
 
 ## Paid? 💸
 
-Yep, need to pay bills (infra + home).  
+Yep, need to pay bills (infra + home). But its dust cheap!  
 
-$10/month for 100 counters.
+As low as $4/month when paid annually. Check pricing on [website](http://eventscounter.com/).
 
-## Release? 🦄
+<br/>
 
-I am just working on the dashboard part. But as you can see, its working well on this blog.  
+## Launch day? 🦄
 
-So if you want to jump right in and give it a try.  
-
-Just ask and I'll give you 50% off. Send me an email hello@theRDnotes.com
+Eh! You can use it right now!  
+<br/>
+As you can see its incorporated and working well on this blog. Page views counter on top and reactions counters at bottom are from `react-events-counter` library.  
+<br/>
+I'm using it with two other of my products, therefore I bake in feature as soon as I feel the need.  
+<br/>
+Give it a try!  
+Need help? Send me an email hello@EventsCounter.com  
 
 
 
