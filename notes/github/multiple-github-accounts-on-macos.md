@@ -1,12 +1,12 @@
 ---
 title: 'Multiple GitHub accounts on macOS'
 description: 'Configuring multiple GitHub accounts on same MacBook using ssh keys'
-slug: '/multiple-github-accounts-on-macos'
+slug: '/github/multiple-github-accounts-on-macos'
 date_created: '2021-03-30'
 date_modified: '2021-03-30'
 author: 'RD'
-published: false
-tags: 
+is_published: true
+tags: github, multiple-accounts, macOS
 ---
 
 Situation is to use my work and personal GitHub accounts on the same machine.  
