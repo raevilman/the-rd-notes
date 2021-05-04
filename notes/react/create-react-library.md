@@ -5,10 +5,10 @@ slug: '/create-react-library'
 date_created: '2020-09-14'
 date_modified: '2020-09-14'
 author: 'RD'
-is_published: false
+is_published: true
 show_in_recent: true
 is_project: false
-tags: rest, api, sort
+tags: react, library
 ---
 ## Setup
 We'll use [create-react-library](https://www.npmjs.com/package/create-react-library) CLI tool to generate our library project.  
