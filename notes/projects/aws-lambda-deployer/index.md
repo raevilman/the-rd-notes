@@ -83,6 +83,20 @@ this plugin also helps in case you are dealing with multiple [AWS Named Profiles
 
 Link to JetBrains Plugin website:  
 
-https://plugins.jetbrains.com/plugin/14742-aws-lambda-deployer
+[https://plugins.jetbrains.com/plugin/14742-aws-lambda-deployer](https://plugins.jetbrains.com/plugin/14742-aws-lambda-deployer)
 
+---
 
+### UPDATES
+- 01 August, 2021
+  - Makes it compatible with JetBrains IDE v2021.2.
+- 08 April, 2021
+  - Makes it compatible with JetBrains IDE v2021.1.
+  - Support for inbuilt AWS profiles. No dependency on AWS CLI installation.
+-  27 March, 2021  
+  - Supports AWS Lambda Layers. Create new versions, delete old versions and update lambda functions to any layer version right from the IDE.  
+  - Support for inbuilt AWS profiles. No dependency on AWS CLI installation.
+- 28 August, 2020  
+  - Plugin is now compatible with IntelliJ Platform 2020.2.1  
+- 20 December, 2020  
+  - Plugin is now compatible with IntelliJ Platform 2020.3
