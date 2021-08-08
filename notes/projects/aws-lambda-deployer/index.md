@@ -48,23 +48,8 @@ Open IntelliJ
 ### Bonus 🎄  
 
 this plugin also helps in case you are dealing with multiple [AWS Named Profiles](http://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html) or [AWS Organization](https://aws.amazon.com/organizations/)   
-<br/>
-
----
 
 <br/>
-
-## Update v2020.3.3 | 29 March 2021
-
-- Introducing support for Lambda Layers.  
-  <br/>
-  You can create new versions of Lambda layers as well delete the old ones.  
-  <br/>
-  Also(the most tedious task), you can update Lambda Functions to any layer version with one button, right from the IDE.  
-  <br/>
-
-- Support for inbuilt AWS profiles. No dependency on AWS CLI installation.
-
 
 ---
 
@@ -79,24 +64,32 @@ this plugin also helps in case you are dealing with multiple [AWS Named Profiles
 
 <br/>
 
+---
+
+<br/>
+
 ### Link
 
 Link to JetBrains Plugin website:  
 
 [https://plugins.jetbrains.com/plugin/14742-aws-lambda-deployer](https://plugins.jetbrains.com/plugin/14742-aws-lambda-deployer)
 
+<br/>
+
 ---
 
+<br/>
+
 ### UPDATES
-- 01 August, 2021
+- **01 August, 2021**
   - Makes it compatible with JetBrains IDE v2021.2.
-- 08 April, 2021
+- **08 April, 2021**
   - Makes it compatible with JetBrains IDE v2021.1.
   - Support for inbuilt AWS profiles. No dependency on AWS CLI installation.
--  27 March, 2021  
-  - Supports AWS Lambda Layers. Create new versions, delete old versions and update lambda functions to any layer version right from the IDE.  
-  - Support for inbuilt AWS profiles. No dependency on AWS CLI installation.
-- 28 August, 2020  
+-  **27 March, 2021**
+   -  Supports AWS Lambda Layers. Create new versions, delete old versions and update lambda functions to any layer version right from the IDE.  
+   -  Support for inbuilt AWS profiles. No dependency on AWS CLI installation.
+- **28 August, 2020**  
   - Plugin is now compatible with IntelliJ Platform 2020.2.1  
-- 20 December, 2020  
+- **20 December, 2020**  
   - Plugin is now compatible with IntelliJ Platform 2020.3
