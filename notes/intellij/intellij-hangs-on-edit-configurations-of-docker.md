@@ -16,14 +16,15 @@ This note is regarding one issue I faced yesterday, where in I wasn't able to ed
 
 
 
-![docker-modify-run-config](./docker-modify-run-config.png)
+![docker-modify-run-config](./docker-modify-run-config.jpg)
 
 
 ## Solution
 
 
-The solution was to get rid of this corrupted configuration and add a new one using edit configurations dialog itself.
+The solution was to get rid of this corrupted configuration and add a new one using edit configurations dialog itself.  
 I've recorded the below vlog about it.  
 
 [![Video showcasing the solution](./intellij-docker-config-issuevideo-thumbnail.jpg)](https://youtu.be/6WTvK_ltqig "IntelliJ hangs on edit configurations of DockerFile")
 
+HIH
