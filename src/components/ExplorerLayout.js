@@ -3,7 +3,6 @@ import ExplorerBreadCrumbs from "./ExplorerBreadCrumbs";
 import { Link } from "gatsby";
 
 import Layout from "./Layout";
-import "react-events-counter/dist/index.css";
 import { FaRegFolder, FaRegFileAlt } from "react-icons/fa";
 
 function NotesLayout({ children, currentPath, dirs, files }) {
