@@ -17,7 +17,7 @@ This note is about how to setup, build and deploy an API using Vercel Serverless
 If you prefer to watch the video instead of reading article,  
 its available at https://youtu.be/TE9MNxEeOI4  
 Length: 14:38 mins  
-
+For sure, the video version has some more info(verbose 😀) in it.
 
 ## Setup Vercel 
 
