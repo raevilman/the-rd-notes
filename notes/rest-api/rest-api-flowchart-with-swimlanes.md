@@ -1,11 +1,11 @@
 ---
 title: 'REST API Flowchart with Swimlanes'
 description: 'Demonstrating flow of REST API by creating flowchart with swimlanes'
-slug: '/rest-api-flowchart-with-swimlanes.md'
-date_created: '2020-09-14'
-date_modified: '2020-09-14'
+slug: '/rest-api-flowchart-with-swimlanes'
+date_created: '2021-09-14'
+date_modified: '2021-09-12'
 author: 'RD'
-is_published: false
+is_published: true
 show_in_recent: true
 is_project: false
 tags: rest, api, sort
@@ -28,6 +28,6 @@ Notice! <i>how the `client` swimlane is showing all the possible response codes<
 I liked the outcome. So thought of taking a note to be referred to in future.
 
 ## Bonus:
-This diagram was created using `draw.io` software and you can find its source file [here]().
+This diagram was created using `draw.io` software and you can find its source file [here](https://github.com/raevilman/the-rd-notes/blob/master/notes/rest-api/rest-api-flowchart-with-swimlanes.drawio).
 
 
