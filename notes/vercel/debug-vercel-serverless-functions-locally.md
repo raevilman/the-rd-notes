@@ -22,7 +22,7 @@ Length: 05:22 mins
 ## debug.js 
 
 As the vercel functions are exporting a function which takes `(req, res)`,  
-I just imported this function in another file and called it by passing fake/empty `(req, res)`.  
+I imported this function in another file and called it by passing fake/empty `(req, res)`.  
 For this, created a file `src/debug.js` with following content:  
 ```js
 const api = require("../api/hello");
@@ -49,7 +49,8 @@ Then added a file `.vscode/launch.json`, with following content:
 
 ```
 
-With the above file, I have now got a debug configuration in VS Code's 'Run and Debug (CTRL+SHIFT+D)` side window, which I can click(play button) and start the debugging.  
+With the above file, I have now got a debug configuration in VS Code's `Run and Debug (CTRL+SHIFT+D)` side window.  
+Now I can click(play button) and start the debugging.  
 
 Do not forget to add the breakpoint(s) in your Vercel Function script file.  
 
@@ -79,7 +80,7 @@ Debugging now prints as below:
 ---
 
 
-Thats it about this note.  
+That's it about this note.  
 HIH
 
 ~ [@raevilman](https://twitter.com/raevilman) 🐦 
