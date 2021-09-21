@@ -11,7 +11,7 @@ is_project: false
 tags: multiple, browsers, chrome, firefox
 ---
 
-![How I use multiple browsers on PC and phone](./assets/YouTube%20Thumbnail.png)
+![How I use multiple browsers on PC and phone](./assets/cover-multiple-browsers.png)
 
 For instance, on my phone, I have three browsers:
 
