@@ -26,9 +26,12 @@ In the January, I [tweeted](https://twitter.com/raevilman/status/135539946957605
 But for past couple of months, I have started using multiple browsers along with multiple Chrome profiles.
 
 ---
-![YouTube logo](./assets/youtube-logo.webp)  
-Interested in watching the video version of this thread.
-I have upload the vlog on YouTube [here](https://youtu.be/qg7NZWLgL8E). More [verbose] info.
+| Video version |
+| ---: |
+| ![YouTube logo](./assets/youtube.png)  |
+
+Interested in watching the video version of this note.  
+I have upload the vlog on YouTube __[here](https://youtu.be/qg7NZWLgL8E)__. More [verbose] info.
 
 ---
 
