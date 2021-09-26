@@ -1,5 +1,5 @@
 ---
-title: 'Getting EPOCH time'
+title: 'Getting epoch time'
 description: 'Getting epoch time in various languages'
 slug: '/getting-epoch-time'
 date_created: '2020-09-26'
@@ -19,5 +19,5 @@ export function getEpoch(): number {
 
 Postgres
 ```sql
-SELECT FLOOR(EXTRACT(epoch FROM NOW()))
+select (FLOOR(EXTRACT(epoch FROM NOW()))::int)
 ```
