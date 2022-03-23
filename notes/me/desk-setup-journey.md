@@ -11,9 +11,11 @@ is_project: false
 tags: desk, setup
 ---
 
-This page records everything I do to make my desk and different gadgets I buy, time to time.  
+This page records everything I do to setup my desk  
+and different gadgets I buy, time to time.  
 
-I do record videos, sometimes. You can find that playlist [here](https://www.youtube.com/playlist?list=PL-6UeVSN9N8oIWbp_nGm3bR7jVXlLssA-).
+> **YouTube**  
+> I do record videos, sometimes. You can find that playlist [here](https://www.youtube.com/playlist?list=PL-6UeVSN9N8oIWbp_nGm3bR7jVXlLssA-).
 
 ---
 
