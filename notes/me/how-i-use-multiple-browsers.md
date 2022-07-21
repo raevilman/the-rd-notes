@@ -28,7 +28,7 @@ But for past couple of months, I have started using multiple browsers along with
 ---
 | Video version |
 | ---: |
-| ![YouTube logo](./assets/youtube.png)  |
+| ![YouTube logo](../assets/yt_vid_icon.png)  |
 
 Interested in watching the video version of this note.  
 I have upload the vlog on YouTube __[here](https://youtu.be/qg7NZWLgL8E)__. More [verbose] info.
