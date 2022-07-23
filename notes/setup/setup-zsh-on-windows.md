@@ -26,6 +26,16 @@ So to list the steps, we'll
 - Colors
 - Points worth noting
 
+---
+</br></br>
+
+/![YouTube logo](../assets/yt_vid_icon.png)\  
+Watch the video instead 👉 [YouTube Link](https://youtu.be/nQTgHDDPU0Y), covers each step.  
+
+</br></br>
+
+---
+
 ## Installations
 
 ### WSL
