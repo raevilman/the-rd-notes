@@ -9,7 +9,10 @@ export default ({ data }) => {
   return (
     <div>
       <Layout title="theRDnotes">
-        <div className="min-h-screen flex justify-center items-center bg-gray-100">
+        <div className="p-16 flex justify-center items-center bg-gray-100" style={{
+minHeight: `50vh`,
+borderRadius: `10px`,
+margin: `0.5rem`,}}>
           <div className="flex flex-col gap-8">
             <section className="border-l-2 border-orange-300 pl-2">
               <FaRegFileAlt />
