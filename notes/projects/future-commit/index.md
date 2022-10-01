@@ -47,5 +47,9 @@ Learnings from doing this project:
 
 # Create your own formulae
 
-Watch the tutorial here 👉 https://youtu.be/HkIlWwKg6F 
+Article 👉 https://www.therdnotes.com/packaging-homebrew-formula  
+
+Watch the tutorial here 👇    
+</br>
+[![YouTube logo](../../misc/create-homebrew-formula-video-thumb.webp)](https://youtu.be/HkIlWwKg6FI)
 

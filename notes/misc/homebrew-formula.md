@@ -13,10 +13,19 @@ tags: homebrew, formula
 
 These notes are from the experience of building the project -> [future-commit](/projects/git-commit-future-date)
 
-High level steps:
+# High level steps:
 1. Make executable
 2. Create formula
 3. Serve through a tap
+
+---
+# Watch the video
+
+</br>
+
+[![YouTube logo](./create-homebrew-formula-video-thumb.webp)](https://youtu.be/HkIlWwKg6FI)
+
+---
 
 ## Make executable
 My project was written in node. I could have gone with `npm install` as well.  
