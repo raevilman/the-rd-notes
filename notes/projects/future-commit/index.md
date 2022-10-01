@@ -45,3 +45,7 @@ Learnings from doing this project:
 - How to brew your own formula?
 - How to create and use your personal tap for homebrew?
 
+# Create your own formulae
+
+Watch the tutorial here 👉 https://youtu.be/HkIlWwKg6F 
+
