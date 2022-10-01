@@ -1,6 +1,6 @@
 ---
 title: 'Packaging homebrew formula'
-description: 'Notes on packaging a homebrew formula and serving through personal tap 😁'
+description: 'Notes on packaging a homebrew formula and serving through personal tap'
 slug: '/packaging-homebrew-formula'
 date_created: '2022-10-01'
 date_modified: '2022-10-01'
@@ -11,7 +11,7 @@ is_project: false
 tags: homebrew, formula
 ---
 
-This notes are from experience of building the project -> [future-commit](/projects/git-commit-future-date)
+These notes are from the experience of building the project -> [future-commit](/projects/git-commit-future-date)
 
 High level steps:
 1. Make executable

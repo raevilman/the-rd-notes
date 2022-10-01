@@ -12,7 +12,7 @@ tags: git, commit, date, homebrew
 ---
 
 # What?
-A tiny utility to git-commit in future.  
+A tiny utility to `git commit` in the future.  
 
 # Syntax
 
@@ -29,6 +29,10 @@ Prefer to have it installed!
 brew tap raevilman/tap
 brew install future-commit
 ```
+
+# Demo
+
+![](https://github.com/raevilman/future-commit/raw/master/assets/demo.gif)
 
 # Source
 
