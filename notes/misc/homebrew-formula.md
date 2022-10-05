@@ -23,7 +23,7 @@ These notes are from the experience of building the project -> [future-commit](/
 
 </br>
 
-[![YouTube logo](./create-homebrew-formula-video-thumb.webp)](https://youtu.be/HkIlWwKg6FI)
+[![YouTube logo](./create-homebrew-formula-video-thumb.webp)](https://youtu.be/Oe0DOpG0GpQ)
 
 ---
 
