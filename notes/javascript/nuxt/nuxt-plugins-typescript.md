@@ -18,14 +18,7 @@ For example, `puppy.ts`
 
 ```ts
 class Puppy {
-  private static _self: Puppy
-
-  // eslint-disable-next-line no-useless-constructor
-  private constructor() {}
-
-  public static getInstance() {
-    return this._self || (this._self = new this())
-  }
+  constructor() {}
 
   bark() {
     console.log('Puppy::bark')
@@ -62,7 +55,7 @@ declare module '@nuxt/types' {
 }
 
 const puppyPlugin: Plugin = (context) => {
-  context.$puppy = Puppy.getInstance()
+  context.$puppy = new Puppy()
 }
 
 export default puppyPlugin
