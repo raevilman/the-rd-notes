@@ -36,7 +36,7 @@ plugins: ['~/plugins/puppy.ts'],
 ## Injecting plugin
 
 Let's inject our plugin into Nuxt Context  
-by addign a new property to the context under `@nuxt/types`.
+by adding a new property to the context under `@nuxt/types`.
 
 Add folloging code to `plugins/puppy.ts` file.
 
