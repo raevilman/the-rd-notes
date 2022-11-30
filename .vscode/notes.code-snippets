@@ -30,5 +30,34 @@
 			"tags: ",
 			"---",
 		]
+	},
+	"Inserts markdown table": {
+		"prefix": "table",
+		"body": [
+			"| Left-aligned | Center-aligned | Right-aligned |",
+			"| :--- | :---: | ---: |",
+			"| 1 | A | 3 |",
+			"| 2 | B | 4 |"
+		],
+		"description": "Inserts markdown table"
+	},
+	"Inserts expandable summary for markdown": {
+		"prefix": [
+			"summary",
+			"expandable"
+		],
+		"body": [
+			"<details open>",
+			"<summary>",
+			"",
+			"#### Markdown *in* `summary`",
+			"",
+			"</summary>",
+			"",
+			"Hi.",
+			"",
+			"</details>"
+		],
+		"description": "Inserts expandable summary for markdown"
 	}
 }
