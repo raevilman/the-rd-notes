@@ -2,17 +2,19 @@
 title: 'Best Practices for REST API Design'
 slug: '/rest-api-design-best-practices'
 date_created: '2022-09-23'
-date_modified: '2022-09-23'
+date_modified: '2022-12-20'
 author: 'RD'
-is_published: false
+is_published: true
 show_in_recent: true
 is_project: false
 tags: rest, api, best-practices, design
 ---
+<small>*a live document*</small>  
 
 Expand below sections to read more about them  
 <details><summary>
-API Design
+
+## API Design
 </summary>
 
 ## Endpoints
@@ -46,8 +48,10 @@ Read [this](/sorting-in-rest-api). Also has info on multi-column sorting.
 
 </details>
 
-<details>
-<summary>API Security</summary>
+<details><summary>
+
+## API Security
+</summary>
 
 ## Rate limiting
 
@@ -61,8 +65,9 @@ Client exceeding limits should be sent following response status:
 
 </details>
 
-<details>
-<summary>API management</summary>
+<details><summary>
+
+## API management</summary>
 
 ## Versioning
 
