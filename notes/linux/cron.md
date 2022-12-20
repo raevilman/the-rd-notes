@@ -7,7 +7,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: 
+tags: cron, linux
 ---
 
 ## Edit the `cron` file
@@ -51,6 +51,16 @@ Use [crontab.guru](https://crontab.guru/) website.
 
 <br/>
 
+“At minute 30 of the day.”
+```
+30 * * * *
+```
+
+“At every 30th minute.”
+```
+*/30 * * * *
+```
+
 “At 04:05 on Sunday.”
 ```
 5 4 * * sun
@@ -63,9 +73,31 @@ Use [crontab.guru](https://crontab.guru/) website.
 0 22 * * 1-5
 ```
 
+## Operators
+| Operator | Meaning | Example |
+| :--- | :---: | ---: |
+| `*` | Every possible value. | * in hour means every hour of the day|
+| `,` | Comma separated list of values | 2,4 in hour field means 2nd and 4th hour of the day |
+| `-` | Range of values | 9-11 days is equivalent to 9,10,11 with comma operator
+| `/` | Step value, used to skip by the step value | Usage with range: 0-10/3 means every third hour in that range.  Can be used with `*` like */2 means every second hour of the day 
+
 
 
 ## Check Service
 ```sh
 sudo service cron status
+```
+
+## Output to file
+Update the cron job as below:  
+```
+* * * * * /path/to/script.sh >> /path/to/logfile/output.log 2>&1
+```
+
+> `2>&1` in the end also redirects error stream to the file. For more info read [this](/redirect-output-to-file-in-linux).
+
+## Cron logs
+
+```
+cat /var/log/syslog | grep cron
 ```
