@@ -1,0 +1,63 @@
+{
+	// Place your the-rd-notes workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"template for new note": {
+		"prefix": "template",
+		"body": [
+			"---",
+			"title: ''",
+			"slug: '/'",
+			"date_created: '2022-09-23'",
+			"date_modified: '2022-09-23'",
+			"author: 'RD'",
+			"is_published: true",
+			"show_in_recent: true",
+			"is_project: false",
+			"tags: ",
+			"---",
+		]
+	},
+	"Inserts markdown table": {
+		"prefix": "table",
+		"body": [
+			"| Left-aligned | Center-aligned | Right-aligned |",
+			"| :--- | :---: | ---: |",
+			"| 1 | A | 3 |",
+			"| 2 | B | 4 |"
+		],
+		"description": "Inserts markdown table"
+	},
+	"Inserts expandable summary for markdown": {
+		"prefix": [
+			"summary",
+			"expandable"
+		],
+		"body": [
+			"<details open>",
+			"<summary>",
+			"",
+			"#### Markdown *in* `summary`",
+			"",
+			"</summary>",
+			"",
+			"Hi.",
+			"",
+			"</details>"
+		],
+		"description": "Inserts expandable summary for markdown"
+	}
+}
