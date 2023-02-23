@@ -70,6 +70,36 @@ Run below
 docker build -t hello-api:latest .
 ```
 
+----
+
+
+So the final `Dockerfile` will look something like this  
+
+```
+ARG BUILD_HOME=/home/gradle/app
+
+FROM gradle:jdk17-alpine as cache
+ARG BUILD_HOME
+WORKDIR $BUILD_HOME
+ENV GRADLE_USER_HOME /cache
+COPY build.gradle gradle.properties settings.gradle ./
+RUN gradle build --no-daemon --stacktrace
+
+FROM gradle:jdk17-alpine as builder
+ARG BUILD_HOME
+WORKDIR $BUILD_HOME
+COPY --from=cache /cache /home/gradle/.gradle
+COPY . $BUILD_HOME/
+RUN gradle --no-daemon clean build --stacktrace
+
+FROM openjdk:17
+ARG BUILD_HOME
+WORKDIR $BUILD_HOME
+COPY --from=builder $BUILD_HOME/build/libs/hello-api.jar app.jar
+EXPOSE 80
+ENTRYPOINT ["java","-jar","app.jar"]
+```
+
 ## FAQs
 
 Q: What if I want to rebuild all stages i.e. not use cached stages?  
