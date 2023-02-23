@@ -1,5 +1,5 @@
 ---
-title: 'IAM Authentication for RDS MySQL'
+title: '[Notes] IAM Authentication for RDS MySQL'
 slug: '/rds-mysql-iam-authentication'
 date_created: '2023-01-25'
 date_modified: '2023-01-25'
@@ -10,6 +10,7 @@ is_project: false
 tags: aws, rds, mysql, iam, authentication
 ---
 
+## Why cleartext-plugin is used?
 IAM auth uses something, very similar to a pre-signed URL as a password.  
 
 That is why we must use the `--enable-cleartext-plugin` option in the connection string.  
@@ -34,3 +35,4 @@ show status like 'Ssl%';
 Resources:  
 
 - https://aws.amazon.com/premiumsupport/knowledge-center/rds-mysql-access-denied/
+- https://www.thegeekdiary.com/understanding-mysql-pluggable-authentication/
