@@ -12,37 +12,48 @@ tags: rest, api, best-practices, design
 <small>*a live document*</small>  
 
 Expand below sections to read more about them  
-<details><summary>
+<details open><summary>
 
 ## API Design
 </summary>
 
-## Endpoints
+### Endpoints
 
-Combination of noun & verb.
+- Combination of noun & verb.
 
-| Description | Verb | Noun | API |
-| :-- | :--- | :--- | :--- |
-| Get all accounts | Get | Accounts | GET www.example.com/accounts |
-| Delete a message with ID 1 | Delete | Meesage | DELETE www.example.com/message/1 |
+    | Description | Verb | Noun | API |
+    | :-- | :--- | :--- | :--- |
+    | Get all accounts | Get | Accounts | GET www.example.com/accounts |
+    | Delete a message with ID 1 | Delete | Meesage | DELETE www.example.com/message/1 |
 
-Don't use verbs as part of the URLs.  
-Eg: www.example.com/get-accounts  
+    Don't use verbs as part of the URLs.  
+    Eg: 
+    www.example.com/get-accounts  
 
-HTTP verbs are there for this purpose only.
+    HTTP verbs are there for this purpose only.
 
-## Status codes
+- Use hyphens to separate words  
+    Eg: 
+    www.therdnotes.com/rest-api-design-best-practices  
+
+### Query parameters  
+
+- Use underscore to separate words  
+    Eg:  
+    www.therdnotes.com/posts?sort_by=id  
+
+### Status codes
 
 Return proper status codes. Spend like 30 minutes to read all the status codes and their use case.  
 
-## Pagination
+### Pagination
 
 Let clients pass limit & page for all GET APIs.  
 Fallback to default values if they don't pass.
 
 Eg: www.example.com/exployees?limit=100&page=2
 
-## Sorting
+### Sorting
 
 Read [this](/sorting-in-rest-api). Also has info on multi-column sorting.  
 
@@ -53,7 +64,7 @@ Read [this](/sorting-in-rest-api). Also has info on multi-column sorting.
 ## API Security
 </summary>
 
-## Rate limiting
+### Rate limiting
 
 Avoid [DOS (Denial-of-Services)](https://en.wikipedia.org/wiki/Denial-of-service_attack) attacks.  
 
@@ -69,7 +80,7 @@ Client exceeding limits should be sent following response status:
 
 ## API management</summary>
 
-## Versioning
+### Versioning
 
 Versioning keeps both API developers and consumers happy and loosely coupled.  
 
@@ -82,7 +93,12 @@ www.example.com/v2/employees // Version 2
 www.example.com/v3/employees // Version 3
 ```
 
-## Documentation
+### Documentation
 
 At least, automatically generate swagger documentation using libraries and serve them using Swagger-UI.
 </details>
+
+--- 
+
+Sources:
+- https://stackoverflow.com/a/18450653/958616

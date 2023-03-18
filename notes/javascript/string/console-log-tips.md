@@ -14,12 +14,12 @@ is_project: false
 
 Log the variable name along with the value by just wrapping it curly braces.
 
-![How I use multiple browsers on PC and phone](./assets/log-variable-names.webp)
+![Log variables name](../assets/log-variable-names.webp)
 
 # Formatting
 
 Using string substitutions:
 
-![How I use multiple browsers on PC and phone](./assets/log-formatted-msg.webp)
+![Log formatted message](../assets/log-formatted-msg.webp)
 
 More info at [MDN](https://developer.mozilla.org/en-US/docs/Web/API/console#outputting_text_to_the_console) website.  
