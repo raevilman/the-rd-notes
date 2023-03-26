@@ -1,6 +1,6 @@
 ---
-title: 'Vue CheatSheet'
-slug: '/vue-cheatsheet'
+title: 'Vue Declaration CheatSheet'
+slug: '/vue-declaration-cheatsheet'
 date_created: '2023-03-18'
 date_modified: '2023-03-18'
 author: 'RD'
@@ -12,8 +12,8 @@ tags: vue, cheatsheet
 
 # Vue CheatSheet
 
-## Arrays
-### In props
+## 1. Props
+### Arrays
 ```js
 props: {
     radioItems: {
@@ -23,7 +23,8 @@ props: {
   },
 ```
 
-### As `ref`
+## 2. refs
+### Arrays
 ```js
 const openState = ref([] as Array<number>)
 ```
