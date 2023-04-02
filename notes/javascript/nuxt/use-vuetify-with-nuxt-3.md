@@ -7,7 +7,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: 
+tags: nuxt, vuetify, sass
 ---
 
 # Use Vuetify with Nuxt 3
