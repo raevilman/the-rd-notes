@@ -10,8 +10,6 @@ is_project: false
 tags: 
 ---
 
-# Buck Privacy Policy
-
 - Buck does not collect any personal information.
 - Buck does not share any personal information with anyone.
 - Buck does not have any servers.
