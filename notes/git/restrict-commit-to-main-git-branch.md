@@ -10,7 +10,7 @@ is_project: false
 tags: git, branch, commit, main, master
 ---
 
-# Restrict commit to main git branch
+# Understand the concept
 
 Create a pre-commit hook to restrict commits to the main branch.
 
@@ -30,3 +30,23 @@ fi
 ## Points to note.
 - This can be easily bypassed.
 - GitHub offers branch protection which is a paid feature.
+- This file doesn't get pushed to the remote repository. So, this won't work for a team.
+
+## For the team
+
+The trick is create the above discussed file as part of the build process.
+
+For gradle projects, add the following to `build.gradle` file.
+
+```groovy
+task createPreCommitHook(type: Copy) {
+    from new File(rootProject.rootDir, 'scripts/pre-commit')
+    into { new File(rootProject.rootDir, '.git/hooks')}
+    fileMode 0775
+}
+```
+
+Create a file named `pre-commit` in `scripts` directory with the content as discussed above.
+
+You can verify the file is created by running `./gradlew build` command.
+
