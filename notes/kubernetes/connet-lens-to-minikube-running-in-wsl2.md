@@ -61,7 +61,11 @@ users:
 - Try to connect using the new cluster.
   ![Lens connected to minikube](./lens-minikube-wsl2-connected.png)
 
+## Tip
 
+If you happen to delete the minikube cluster and recreate it, the config needs to be updated with the new port the new cluster is running on.
+
+Get the new port from `/home/rd/.kube/config` file.
 
 ~  
 HIH  
