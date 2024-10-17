@@ -30,10 +30,8 @@ For installation i've downloaded the package from [gitforwindows](https://gitfor
 I've used following command to generate the SSH key.  
 
 ```sh
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
-
-> Make sure to provide passphrase with length more than 5 characters.
 
 ### Awaken the SSH agent
 
