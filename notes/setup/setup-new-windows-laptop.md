@@ -55,16 +55,17 @@ PDF: No Adobe! pls. Better off with Edge or install Sumatra PDF.
 - JDK 
 - IntelliJ
 - Bruno
+- NodeJs
 
 Script
 ```
 winget install Bitwarden.Bitwarden
 winget install Microsoft.VisualStudioCode
 winget install --id Git.Git -e --source winget
-winget install --id=Amazon.Corretto.23.JDK  -e --source winget
+winget install --id=Amazon.Corretto.23.JDK -e --source winget
 winget install --id JetBrains.IntelliJIDEA.Community -e --source winget
-winget install --id=Bruno.Bruno  -e
-
+winget install --id=Bruno.Bruno -e
+winget install --id=OpenJS.NodeJS -e
 
 ```
 
