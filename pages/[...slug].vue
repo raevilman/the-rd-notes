@@ -14,6 +14,7 @@ const route = useRoute()
 const { slug } = route.params
 
 // Hardcoded: Render the article with slug 'git-init-default-branch-name' using Nuxt Content v3 queryCollection
+
 const { data: page } = await useAsyncData(`content-${slug}`, async () => {
   try {
     const result = await queryCollection('content')
@@ -25,7 +26,8 @@ const { data: page } = await useAsyncData(`content-${slug}`, async () => {
     return null
   }
 })
-const fullPath = page.value?.path
+
+const fullPath = computed(() => page.value?.path || '')
 
 // Extract tags from the current page
 const pageTags = computed(() => {
@@ -38,21 +40,34 @@ const pageTags = computed(() => {
 
 
 // Get related articles based on the first tag
-const { data: relatedArticles } = await useAsyncData(`related-${fullPath}`, async () => {
-  if (!pageTags.value.length) return []
-  const firstTag = pageTags.value[0]
-  const results = await queryCollection('content')
-    .where('is_published', '=', true)
-    .where('tags', 'LIKE', `%${firstTag}%`)
-    .select('title', 'description', 'path', 'is_project', 'tags', 'date_created')
-    .order('date_created', 'DESC')
-    .limit(10)
-    .all()
-  // Filter out current article and projects in JS
-  return results.filter(
-    a => a.path !== fullPath && !a.is_project
-  ).slice(0, 5)
-})
+
+const { data: relatedArticles } = await useAsyncData(
+  () => `related-${fullPath.value}`,
+  async () => {
+    if (!pageTags.value.length || !fullPath.value) return []
+    const firstTag = pageTags.value[0]
+    const results = await queryCollection('content')
+      .where('is_published', '=', true)
+      .where('tags', 'LIKE', `%${firstTag}%`)
+      .select('title', 'description', 'path', 'is_project', 'tags', 'date_created')
+      .order('date_created', 'DESC')
+      .limit(10)
+      .all()
+    // Filter out current article and projects in JS
+    return results
+      .filter(a => a.path !== fullPath.value && !a.is_project)
+      .slice(0, 5)
+      .map(a => ({
+        slug: a.path?.split('/').pop() || '',
+        path: a.path,
+        title: a.title || '',
+        description: a.description || '',
+        date_created: a.date_created || '',
+        is_project: a.is_project || false,
+        tags: Array.isArray(a.tags) ? a.tags : (typeof a.tags === 'string' ? a.tags.split(',').map(t => t.trim()) : [])
+      }))
+  }
+)
 
 useSeoMeta({
   title: () => page.value?.title || 'Article',

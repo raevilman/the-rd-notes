@@ -11,15 +11,17 @@
 
         <!-- Color Mode Switch -->
         <div class="flex items-center">
-          <UButton
-            :icon="colorMode.value === 'dark' ? 'i-lucide-sun' : 'i-lucide-moon'"
-            color="gray"
-            variant="ghost"
-            size="sm"
-            style="cursor: pointer;"
-            @click="colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'"
-            :aria-label="`Switch to ${colorMode.value === 'dark' ? 'light' : 'dark'} mode`"
-          />
+          <ClientOnly>
+            <UButton
+              :icon="colorMode.value === 'dark' ? 'i-lucide-sun' : 'i-lucide-moon'"
+              color="neutral"
+              variant="ghost"
+              size="sm"
+              style="cursor: pointer;"
+              @click="colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'"
+              :aria-label="`Switch to ${colorMode.value === 'dark' ? 'light' : 'dark'} mode`"
+            />
+          </ClientOnly>
         </div>
       </div>
     </div>
