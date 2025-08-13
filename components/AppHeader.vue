@@ -5,11 +5,7 @@
         <!-- Logo -->
         <div class="flex items-center">
           <NuxtLink to="/" class="flex items-center">
-            <span class="text-xl font-semibold text-gray-900 dark:text-white">the</span>
-            <div class=" h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-              <span class="text-white font-bold text-lg">RD</span>
-            </div>
-            <span class="text-xl font-semibold text-gray-900 dark:text-white">Notes</span>
+            <span class="text-xl font-semibold text-gray-900 dark:text-white">theRDnotes</span>
           </NuxtLink>
         </div>
 

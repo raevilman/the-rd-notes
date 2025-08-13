@@ -67,7 +67,7 @@ const tabs = [
     <div class="max-w-3xl mx-auto">
       <div class="mb-10 text-center">
         <h1 class="text-3xl font-semibold text-gray-900 dark:text-white">Hi, I'm RD</h1>
-        <p class="text-gray-600 dark:text-gray-400 mt-2">I write concise notes and small projects around cloud, JavaScript, Java, and tooling.</p>
+        <p class="text-gray-600 dark:text-gray-400 mt-2">Explore brief notes and insights from my journey building side projects.</p>
       </div>
 
       <div class="mb-6 flex justify-center">
