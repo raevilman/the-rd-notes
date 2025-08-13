@@ -11,7 +11,14 @@ import { computed } from 'vue'
 
 
 const route = useRoute()
-const { slug } = route.params
+
+// Remove trailing slash from slug
+let { slug } = route.params
+if (typeof slug === 'string') {
+  slug = slug.replace(/\/+$/, '')
+} else if (Array.isArray(slug)) {
+  slug = slug.map(s => s.replace(/\/+$/, ''))[0]
+}
 
 // Hardcoded: Render the article with slug 'git-init-default-branch-name' using Nuxt Content v3 queryCollection
 
