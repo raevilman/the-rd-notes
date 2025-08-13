@@ -9,7 +9,7 @@ const { data: allItems } = await useAsyncData('all-items', () => {
     .where('is_published', '=', true)
     .where('show_in_recent', '=', true)
     .order('date_created', 'DESC')
-    .select('title', 'description', 'path', 'is_project', 'tags', 'date_created')
+    .select('title', 'description', 'path', 'slug', 'is_project', 'tags', 'date_created')
     .all()
 })
 
@@ -83,7 +83,7 @@ const tabs = [
           <UBadge 
             v-for="tag in allTags" 
             :key="tag" 
-            :color="selectedTags.includes(tag) ? 'primary' : 'gray'" 
+            :color="selectedTags.includes(tag) ? 'primary' : 'neutral'" 
             :variant="selectedTags.includes(tag) ? 'solid' : 'soft'"
             @click="toggleTag(tag)" 
             class="cursor-pointer hover:opacity-80 transition-opacity"
@@ -92,7 +92,7 @@ const tabs = [
           </UBadge>
         </div>
         <div class="text-center mt-4" v-if="selectedTags.length">
-          <UButton color="rose" variant="soft" size="xs" @click="selectedTags=[]">Clear all</UButton>
+          <UButton color="error" variant="soft" size="xs" @click="selectedTags=[]">Clear all</UButton>
         </div>
       </div>
 

@@ -1,31 +1,31 @@
 
+
+
+// No import for queryContent; use useFetch instead
+import { useRoute } from 'vue-router'
+import { useAsyncData, useSeoMeta } from '#app'
+
+
 <script setup lang="ts">
 import { computed } from 'vue'
+
 
 const route = useRoute()
 const { slug } = route.params
 
-// Construct the full path for content query
-// The slug array includes 'notes' as first element, so we need to exclude it
-const fullPath = Array.isArray(slug) ? `/notes/${slug.slice(1).join('/')}` : `/notes/${slug}`
-
-// Debug logging
-console.log('Route params:', route.params)
-console.log('Slug:', slug)
-console.log('Full path:', fullPath)
-
-
-const { data: page } = await useAsyncData(`content-${fullPath}`, async () => {
+// Hardcoded: Render the article with slug 'git-init-default-branch-name' using Nuxt Content v3 queryCollection
+const { data: page } = await useAsyncData(`content-${slug}`, async () => {
   try {
-    // Use queryCollection for Nuxt Content v3
-    // The collection is named 'content' in content.config.ts
-    const result = await queryCollection('content').path(fullPath).first()
+    const result = await queryCollection('content')
+      .where('slug', 'LIKE', `%${slug}%`)
+      .first()
     return result
   } catch (error) {
     console.error('Query error:', error)
     return null
   }
 })
+const fullPath = page.value?.path
 
 // Extract tags from the current page
 const pageTags = computed(() => {
@@ -34,19 +34,24 @@ const pageTags = computed(() => {
   return Array.isArray(tags) ? tags : (typeof tags === 'string' ? tags.split(',').map(t => t.trim()) : [])
 })
 
+// Get related articles based on the first tag, excluding current by slug
+
+
 // Get related articles based on the first tag
 const { data: relatedArticles } = await useAsyncData(`related-${fullPath}`, async () => {
   if (!pageTags.value.length) return []
   const firstTag = pageTags.value[0]
-  return await queryCollection('content')
+  const results = await queryCollection('content')
     .where('is_published', '=', true)
-    .where('is_project', '!=', true)
-    .where('path', '!=', fullPath)
     .where('tags', 'LIKE', `%${firstTag}%`)
     .select('title', 'description', 'path', 'is_project', 'tags', 'date_created')
     .order('date_created', 'DESC')
-    .limit(5)
+    .limit(10)
     .all()
+  // Filter out current article and projects in JS
+  return results.filter(
+    a => a.path !== fullPath && !a.is_project
+  ).slice(0, 5)
 })
 
 useSeoMeta({
@@ -66,7 +71,7 @@ useSeoMeta({
           <UBadge 
             v-for="tag in pageTags" 
             :key="tag" 
-            color="gray" 
+            color="neutral" 
             variant="soft"
             size="sm"
           >
@@ -80,9 +85,9 @@ useSeoMeta({
       </div>
       
       <!-- Related articles section -->
-      <div v-if="relatedArticles.length" class="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700">
+      <div v-if="relatedArticles?.length" class="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700">
         <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">Related Articles</h2>
-        <ArticleList :items="relatedArticles" />
+        <ArticleList :items="relatedArticles ?? []" />
       </div>
     </article>
     <div v-else class="text-center py-20">
