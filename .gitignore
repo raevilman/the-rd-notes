@@ -1,9 +1,6 @@
 .cache
 node_modules
 
-# Build directory
-public
-
 # Other
 .DS_Store
 yarn-error.log
@@ -50,6 +47,3 @@ coverage
 *.lcov
 .nyc_output
 reports
-
-# Misc
-public
