@@ -26,12 +26,12 @@ create-react-library
 
 You will be prompted with couple of questions as below:  
 
-![create-react-library](./create-react-library.png)
+![create-react-library](/images/create-react-library.png)
 
 
 After the above command finishes. Notice the output's last few lines as shown below.  
 
-![create-react-library](./create-react-library-last.png)
+![create-react-library](/images/create-react-library-last.png)
 
 Actually if you `cd` into the folder and notice the content. There is one extra project inside folder named `example`, which is create-react-app application that you can use to test the component that you will build in the library.
 

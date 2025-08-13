@@ -8,6 +8,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
+tags: gradle, intellij
 ---
 
 For those who land on this page because they are looking for how to update Gradle in IntelliJ.

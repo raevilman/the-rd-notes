@@ -7,7 +7,7 @@ date_modified: '2020-10-04'
 author: 'RD'
 is_published: true
 show_in_recent: true
-tags: vs-code, setup, windows
+tags: git, windows, ssh
 ---
 
 Notes on setting up Git on Windows with SSH as auth mechanism.  
@@ -42,7 +42,7 @@ Find 'OpenSSH Authentication Agent' and enable it from its properties window(rig
 
 Screenshot:
 
-![SSH Agent Windows OS](./enable-ssh-service.png)
+![SSH Agent Windows OS](/images/enable-ssh-service.png)
 
 ### Tell the GitHub
 So you got your ssh key and the agent running. Now its time to tell the GitHub about your key so that authentication can happen.  

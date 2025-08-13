@@ -24,7 +24,7 @@ sudo apt install nodejs
 sudo apt install npm
 ```
 - When trying to npm, you might see below:  
-![Remove node modules](./remove-node-modules.png)  
+![Remove node modules](/images/remove-node-modules.png)  
   
 Solution to this is to remove the `node_modules` directory and install the packages again:  
 ```
@@ -35,7 +35,7 @@ npm install
 Still there might be cases where you can face problems like one below.  
 Where I am trying to install `gatsby-cli` but failed because of write permissions.  
 
-![](./npm-permission-issue.png)
+![](/images/npm-permission-issue.png)
 
 For the solution, you can refer to this [StackOverflow answer](https://stackoverflow.com/a/40905762/958616).  
 

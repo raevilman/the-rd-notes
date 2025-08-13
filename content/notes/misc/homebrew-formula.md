@@ -19,13 +19,6 @@ These notes are from the experience of building the project -> [future-commit](/
 3. Serve through a tap
 
 ---
-# Watch the video
-
-</br>
-
-[![YouTube logo](./create-homebrew-formula-video-thumb.webp)](https://youtu.be/Oe0DOpG0GpQ)
-
----
 
 ## Make executable
 My project was written in node. I could have gone with `npm install` as well.  

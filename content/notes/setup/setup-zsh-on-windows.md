@@ -8,12 +8,12 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: setup, windows, terminal, zsh
+tags: wsl, zsh, windows, terminal
 ---
 
 Below diagram explains what we are going to do.
 
-![hyper terminal with zsh on windows](./terminal-with-zsh-on-windows.png)
+![hyper terminal with zsh on windows](/images/terminal-with-zsh-on-windows.png)
 
 So to list the steps, we'll
 - Install WSL (Windows subsystem for linux)
@@ -27,21 +27,13 @@ So to list the steps, we'll
 - Points worth noting
 
 ---
-</br></br>
-
-![YouTube logo](../assets/yt_vid_icon.png)  
-Watch the video instead 👉 [YouTube Link](https://youtu.be/nQTgHDDPU0Y), covers each step.  
-
-</br></br>
-
----
 
 ## Installations
 
 ### WSL
 I just enabled 'Windows Subsystem for Linux' in  Windows Feature and restarted the system.  
 
-![](./enable-windows-subsystem-for-linux.png)
+![](/images/enable-windows-subsystem-for-linux.png)
 
 You can follow the instructions on [Microsoft website](https://docs.microsoft.com/en-us/windows/wsl/install-win10).  
 
@@ -54,11 +46,11 @@ For this, visit this [Microsoft Store](https://www.microsoft.com/en-us/p/ubuntu/
 After it is installed. Open it from start menu to continue installation.  
 Setup will ask for a username for linux subsystem.  
 
-![WSL Setup](./wsl-setup.png)
+![WSL Setup](/images/wsl-setup.png)
 
 After entering username, the setup will finish.  
 
-![WSL Setup](./wsl-setup-2.png)
+![WSL Setup](/images/wsl-setup-2.png)
 
 Update the packages with following command  
 ```sh
@@ -80,7 +72,7 @@ Make `zsh` the default shell with following command:
 
 Restart the Ubuntu app and you should be greeted with following screen:    
 
-![zsh welcome screen](./zsh_welcome_ubuntu.png)
+![zsh welcome screen](/images/zsh_welcome_ubuntu.png)
 
 Complete the configuration as per your liking.  
 
@@ -94,7 +86,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 Below is the screenshot of completed installation.  
 
-![Oh my zsh](./oh_my_zsh_installed_ubuntu.png)
+![Oh my zsh](/images/oh_my_zsh_installed_ubuntu.png)
 
 ---
 
@@ -124,11 +116,11 @@ Below are the steps I've taken:
 3. Restart the Ubuntu app.  
 4. You will be prompted with the configuration wizard for PowerLevel10k. If not, type `p10k configure` if the configuration wizard doesn't start automatically.  
 
-![PowerLevel10k Config](./powerlevel10-config-wizard-ubuntu.png)
+![PowerLevel10k Config](/images/powerlevel10-config-wizard-ubuntu.png)
 
 After doing the configuration, my terminal looked like below:  
 
-![PowerLevel10k Config Done](./powerlevel10-config-done-ubuntu.png)  
+![PowerLevel10k Config Done](/images/powerlevel10-config-done-ubuntu.png)  
 
 ---
 
@@ -147,13 +139,13 @@ Link: https://github.com/zsh-users/zsh-autosuggestions
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     ```
  2. To activate the autosuggestions, add it to plugin list in your .zshrc:  
-    ![ZSH Plugins](./zsh-plugins-ubuntu.png)
+   ![ZSH Plugins](/images/zsh-plugins-ubuntu.png)
  3. You will also need to force reload of your .zshrc:  
     ```
     source ~/.zshrc
     ```
 Try typing any command if its available in the history, you will see suggestion as below and then you press `->` right arrow key to complete it.  
-![ZSH AutoSuggestion plugin](./zsh-plugin-autosuggestion-ubuntu.png)  
+![ZSH AutoSuggestion plugin](/images/zsh-plugin-autosuggestion-ubuntu.png)  
 
 ---
 
@@ -170,7 +162,7 @@ Up till now, we have been using the Ubuntu app as our terminal. You can continue
 
 In case you want to switch, below i have notes on few of them.  
 
-![All terminals](./all-terminals.png)
+![All terminals](/images/all-terminals.png)
 
 <details>
 <summary>Windows Terminal</summary>
@@ -181,7 +173,7 @@ Install it from [Microsoft Store](https://www.microsoft.com/en-us/p/windows-term
 ### Font
 Open its settings from the dropdown and add `fontFace` to the profile named `Ubuntu` as shown below  
 
-![Windows Terminal Profile](./windows-terminal-profiles.png)
+![Windows Terminal Profile](/images/windows-terminal-profiles.png)
 
 ### Default Profile
 By default it opens up PowerShell. You can change it by assigning the `GUID` of `Ubuntu` profile to the `defaultProfile` in the settings.  
@@ -217,7 +209,7 @@ zsh
 ```
 - Save and relaunch Hyper.  
  
-![Hyper Theme](./hyper-color-1.png)  
+![Hyper Theme](/images/hyper-color-1.png)  
 
 ### Colors
 
@@ -232,7 +224,7 @@ hyper i hyper-material-theme
 
 Now colors are nice!  
 
-![Hyper Theme](./hyper-themed.png)
+![Hyper Theme](/images/hyper-themed.png)
 
 ### Issue
 
@@ -240,7 +232,7 @@ One issue I noticed with hyper terminal is that it doesn't refresh/clear the scr
 
 As shown below, Hyper(on left) and Windows Terminal(on right) after closing nano editor.  
 
-![Hyper render issue](./hyper-render-issue.png)
+![Hyper render issue](/images/hyper-render-issue.png)
 
 </details>
 
@@ -257,14 +249,14 @@ As shown below, Hyper(on left) and Windows Terminal(on right) after closing nano
 Make Cmder use the custom font we installed earlier.  
 Open settings and select 'MesloLGS NF' as shown below  
 
-![Cmder font](./cmder-settings-font.png)  
+![Cmder font](/images/cmder-settings-font.png)  
 
 ### Shell
 Lets tie cmder with Window's bash now.  
 
 Add a new task in cmder's settings window as shown below  
 
-![Cmder font](./cmder-settings-task.png)  
+![Cmder font](/images/cmder-settings-task.png)  
 
 - Save and relaunch Cmder.  
  

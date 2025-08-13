@@ -20,14 +20,14 @@ The mistake happened in the very first step when I tried pairing them for the fi
 
 As you see in below screenshot, last two entries appeared for OnePlus Bullets Z and the mistake, I clicked on the last one.  
 
-![Add Bluetooth Device](./add-bluetooth-device.png)
+![Add Bluetooth Device](/images/add-bluetooth-device.png)
 
 ## Mistake #2
 When I didn't hear any sound coming out of earphones. I paired the second device from the above list. Guess what I forgot to remove the one added earlier.  
 
 Now there were two bluetooth devices with same name. Strangely one listed under 'Other devices' and this was the one causing problem.  
 
-![Bluetooth devices](./bluetooth-devices.png)
+![Bluetooth devices](/images/bluetooth-devices.png)
 
 ## Problem
 If you notice in above screenshot, both the devices are in connected state and thats the problem causing stuttering.
@@ -38,7 +38,7 @@ Solution was simple but not that I realized in the first place and tried couple 
 
 In my case, the solution was to remove the device listed under 'Unspecified' section from 'Devices and Printers' page.  
 
-![Devices and Printers](./devices-and-printers.png)
+![Devices and Printers](/images/devices-and-printers.png)
 
 
 Once removed. I re-connected my earphones and voilà smooth, crisp sound hitting my ear drums with smile on the face.  

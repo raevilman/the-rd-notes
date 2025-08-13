@@ -14,7 +14,7 @@ This note is about changing the app name, precisely domain name on Google sign-i
 
  
 
-![google-auth-consent-correct-name](./assets/google-auth-consent-correct-name.png)
+![google-auth-consent-correct-name](/images/google-auth-consent-correct-name.png)
 
 
 

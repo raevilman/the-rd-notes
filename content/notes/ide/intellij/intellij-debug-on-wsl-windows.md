@@ -15,13 +15,13 @@ Steps, I've taken to debug apps on WSL.
 ## #1 Note the network type you are connected to
 I was working on my home network, so I marked it as private network.  
 
-![Windows Wifi Settings](./assets/wifi-network-type.png)  
+![Windows Wifi Settings](/images/wifi-network-type.png)  
 
 ## #2 Make sure IntelliJ is allowed on the network type  
 
 As I am connected to private network, IntelliJ should be allowed on same as shown below  
 
-![Windows Defender allow Intellij](./assets/windows-defender-intellij-allow.png)
+![Windows Defender allow Intellij](/images/windows-defender-intellij-allow.png)
 
 
 ## #3 Use IP4 for debugging
@@ -33,7 +33,7 @@ I used below JVM parameter in the run configurations of Intellij
 
 as shown below  
 
-![IntelliJ run config](./assets/intellij-run-config-java-ip4.png)
+![IntelliJ run config](/images/intellij-run-config-java-ip4.png)
 
 and I was able to connect to the debugger 🤘  
 

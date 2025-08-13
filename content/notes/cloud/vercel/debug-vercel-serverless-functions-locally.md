@@ -13,11 +13,6 @@ tags: debug, node, api, vercel, serverless, functions
 
 This note is about how I managed to debug Vercel Serverless Functions locally.
 
-## VLog
-If you prefer to watch the video instead of reading article,  
-its available at https://youtu.be/giEL-ZLE6C4  
-Length: 05:22 mins  
-
 
 ## debug.js 
 
@@ -60,7 +55,7 @@ At this point, I was able to debug and fix my code, but the API function didn't 
 
 Debugging output:  
 
-![Debug output](./debug-stopped.webp)
+![Debug output](/images/debug-stopped.webp)
 
 So to make it work, I passed fake `json()` method as part of `res` object, which just prints to the console.  
 
@@ -76,7 +71,7 @@ console.log("Debug ended");
 
 Debugging now prints as below:  
 
-![Debug output](./debug-output.webp)
+![Debug output](/images/debug-output.webp)
 ---
 
 

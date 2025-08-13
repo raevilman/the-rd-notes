@@ -7,7 +7,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: homebrew, wsl, ubuntu
+tags: wsl, homebrew, ubuntu
 ---
 
 
