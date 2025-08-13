@@ -1,4 +1,3 @@
-# Project dependencies
 .cache
 node_modules
 
@@ -10,3 +9,47 @@ public
 yarn-error.log
 .env.development
 .env.production
+
+# Project dependencies
+node_modules
+.cache
+
+# Nuxt build output (do not commit)
+.nuxt
+.output
+.data
+dist
+vercel_build_output
+build-*
+
+# Logs
+*.log
+yarn-error.log
+
+# Environment files
+.env
+.env.*
+
+# System files
+.DS_Store
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# IDEs
+*.iml
+.idea
+
+# Coverage and test output
+coverage
+*.lcov
+.nyc_output
+reports
+
+# Misc
+public

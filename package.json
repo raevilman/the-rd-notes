@@ -1,14 +1,13 @@
 {
   "name": "the-rd-notes",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "RD Notes - Nuxt Content blog",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "gatsby develop -H 0.0.0.0 -p 8888 -o",
-    "build": "gatsby build --log-pages",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "dev": "nuxt dev --port 3000",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "start": "nuxt start"
   },
   "repository": {
     "type": "git",
@@ -16,28 +15,23 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/raevilman/the-rd-notes/issues"
   },
   "homepage": "https://github.com/raevilman/the-rd-notes#readme",
   "dependencies": {
-    "firebase": "^7.24.0",
-    "gatsby": "^3.4.2",
-    "gatsby-plugin-env-variables": "^2.1.0",
-    "gatsby-plugin-firebase": "^0.2.0-beta.4",
-    "gatsby-plugin-manifest": "^3.4.0",
-    "gatsby-plugin-postcss": "^4.4.0",
-    "gatsby-plugin-react-helmet": "^4.4.0",
-    "gatsby-plugin-sharp": "^2.14.4",
-    "gatsby-remark-images": "^4.2.0",
-    "gatsby-source-filesystem": "^3.4.0",
-    "gatsby-transformer-remark": "^3.2.0",
-    "postcss-import": "^12.0.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^4.2.0",
-    "tailwindcss": "^1.9.6"
+    "@nuxt/content": "^3.6.3",
+    "@nuxt/ui": "^3.3.0",
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "better-sqlite3": "^12.2.0",
+    "nuxt": "^4.0.3",
+    "vue": "^3.5.18"
+  },
+  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee",
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.62",
+    "tailwindcss": "^4.1.11"
   }
 }

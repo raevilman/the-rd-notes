@@ -1,0 +1,261 @@
+:root {
+  --page-max: 48rem; /* 768px */
+}
+
+body {
+  font-family: Roboto, ui-sans-serif, system-ui, -apple-system, Segoe UI, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Dark mode support */
+.dark {
+  color-scheme: dark;
+}
+
+/* GitHub-style markdown styling */
+.prose {
+  color: #24292f;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.dark .prose {
+  color: #e6edf3;
+}
+
+/* Headings */
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  color: #24292f;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4, .dark .prose h5, .dark .prose h6 {
+  color: #f0f6fc;
+}
+
+.prose h1 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #d0d7de;
+}
+
+.dark .prose h1 {
+  border-bottom-color: #30363d;
+}
+
+.prose h2 {
+  font-size: 1.5em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #d0d7de;
+}
+
+.dark .prose h2 {
+  border-bottom-color: #30363d;
+}
+
+.prose h3 {
+  font-size: 1.25em;
+}
+
+.prose h4 {
+  font-size: 1em;
+}
+
+.prose h5 {
+  font-size: 0.875em;
+}
+
+.prose h6 {
+  font-size: 0.85em;
+  color: #656d76;
+}
+
+.dark .prose h6 {
+  color: #7d8590;
+}
+
+/* Paragraphs */
+.prose p {
+  color: #24292f;
+  margin-bottom: 16px;
+}
+
+.dark .prose p {
+  color: #e6edf3;
+}
+
+/* Links */
+.prose a {
+  color: #0969da;
+  text-decoration: none;
+}
+
+.prose a:hover {
+  color: #1a7f37;
+  text-decoration: underline;
+}
+
+.dark .prose a {
+  color: #58a6ff;
+}
+
+.dark .prose a:hover {
+  color: #79c0ff;
+}
+
+/* Code */
+.prose code {
+  background-color: #f6f8fa;
+  color: #24292f;
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  font-size: 85%;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+.dark .prose code {
+  background-color: #21262d;
+  color: #e6edf3;
+}
+
+/* Code blocks */
+.prose pre {
+  background-color: #f6f8fa;
+  color: #24292f;
+  padding: 16px;
+  border-radius: 6px;
+  overflow-x: auto;
+  border: 1px solid #d0d7de;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 85%;
+  line-height: 1.45;
+}
+
+.dark .prose pre {
+  background-color: #0d1117;
+  color: #e6edf3;
+  border-color: #30363d;
+}
+
+.prose pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: inherit;
+}
+
+/* Lists */
+.prose ul, .prose ol {
+  color: #24292f;
+  margin-bottom: 16px;
+  padding-left: 2em;
+}
+
+.dark .prose ul, .dark .prose ol {
+  color: #e6edf3;
+}
+
+.prose li {
+  margin-bottom: 0.25em;
+}
+
+.prose li > ul, .prose li > ol {
+  margin-top: 0.25em;
+  margin-bottom: 0;
+}
+
+/* Blockquotes */
+.prose blockquote {
+  color: #656d76;
+  border-left: 4px solid #d0d7de;
+  padding-left: 16px;
+  margin: 16px 0;
+  font-style: italic;
+}
+
+.dark .prose blockquote {
+  color: #7d8590;
+  border-left-color: #30363d;
+}
+
+/* Tables */
+.prose table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.prose th, .prose td {
+  border: 1px solid #d0d7de;
+  padding: 6px 13px;
+  text-align: left;
+}
+
+.dark .prose th, .dark .prose td {
+  border-color: #30363d;
+}
+
+.prose th {
+  background-color: #f6f8fa;
+  font-weight: 600;
+}
+
+.dark .prose th {
+  background-color: #21262d;
+}
+
+.prose tr:nth-child(even) {
+  background-color: #f6f8fa;
+}
+
+.dark .prose tr:nth-child(even) {
+  background-color: #21262d;
+}
+
+/* Horizontal rules */
+.prose hr {
+  height: 1px;
+  background-color: #d0d7de;
+  border: none;
+  margin: 24px 0;
+}
+
+.dark .prose hr {
+  background-color: #30363d;
+}
+
+/* Images */
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Emphasis */
+.prose strong {
+  font-weight: 600;
+  color: #24292f;
+}
+
+.dark .prose strong {
+  color: #f0f6fc;
+}
+
+.prose em {
+  font-style: italic;
+}
+
+/* Strikethrough */
+.prose del {
+  text-decoration: line-through;
+  color: #656d76;
+}
+
+.dark .prose del {
+  color: #7d8590;
+}
+
+
