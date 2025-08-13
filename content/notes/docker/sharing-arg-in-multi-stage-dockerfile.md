@@ -7,7 +7,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: dockerfile, arg, multi-stage
+tags: docker, dockerfile
 ---
 
 ARGs are available only in the scope they are defined.  

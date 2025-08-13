@@ -32,7 +32,7 @@ cmder.exe /REGISTER ALL
 
 Now right click on a folder and you should see 'Cmder Here' option as shown below  
 
-![cmder explorer context menu](./cmder-context-menu.png)  
+![cmder explorer context menu](/images/cmder-context-menu.png)  
 
 ## Alias
 

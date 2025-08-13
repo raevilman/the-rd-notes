@@ -22,12 +22,12 @@ So I decided to mix them.
 
 Below is how a typical REST API flow will look when pictured using flowcharts with swimlanes:
 
-![REST API Flowchart with Swimlanes](./rest-api-flowchart-with-swimlanes.png)
+![REST API Flowchart with Swimlanes](/images/rest-api-flowchart-with-swimlanes.png)
 
 Notice! <i>how the `client` swimlane is showing all the possible response codes</i>  
 I liked the outcome. So thought of taking a note to be referred to in future.
 
 ## Bonus:
-This diagram was created using `draw.io` software and you can find its source file [here](https://github.com/raevilman/the-rd-notes/blob/master/notes/rest-api/rest-api-flowchart-with-swimlanes.drawio).
+This diagram was created using `draw.io` software and you can find its source file [here](https://github.com/raevilman/the-rd-notes/blob/master/content/notes/rest-api/rest-api-flowchart-with-swimlanes.drawio).
 
 

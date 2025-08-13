@@ -7,7 +7,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: lens, minikube, wsl2, kubernetes
+tags:  wsl, minikube, lens, kubernetes
 ---
 
 ## What internet suggests
@@ -23,7 +23,7 @@ It did pick the configs but was messing up the path when trying to connect to th
 Because the config had the path as `/home/rd/.minikube/profiles/minikube/client.crt`  
 and Lens was trying to use `\\wsl.localhost\Ubuntu\home\rd\.kube\home\rd\.minikube\profiles\minikube\client.crt`
 
-![Lens not connected to minikube](./lens-minikube-wsl2-error.png)
+![Lens not connected to minikube](/images/lens-minikube-wsl2-error.png)
 
 ## Fix
 - Copy the content of config file in an editor.
@@ -59,7 +59,7 @@ users:
 
 - Then add a new cluster in Lens using 'Add from kubeconfig' option and paste the content in the editor.
 - Try to connect using the new cluster.
-  ![Lens connected to minikube](./lens-minikube-wsl2-connected.png)
+  ![Lens connected to minikube](/images/lens-minikube-wsl2-connected.png)
 
 ## Tip
 

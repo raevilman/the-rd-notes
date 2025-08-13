@@ -70,7 +70,7 @@ winget install --id=OpenJS.NodeJS -e
 ```
 
 ## # Enable hibernate & Close lid settings
-  ![Windows power settings](./windows-power-settings.png)   
+  ![Windows power settings](/images/windows-power-settings.png)   
 
 
 
@@ -83,4 +83,4 @@ winget install --id=OpenJS.NodeJS -e
   - Show file extensions
   - Show hidden files  
   
-  ![Show hidden files and extensions](./show-hidden-and-extensions.png)  
+  ![Show hidden files and extensions](/images/show-hidden-and-extensions.png)  

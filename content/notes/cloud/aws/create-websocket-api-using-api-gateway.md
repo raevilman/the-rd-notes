@@ -8,19 +8,10 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: websocket, aws, api-gateway, lambda, http-api
+tags: aws, api-gateway, websocket, lambda, http-api
 ---
 
-![AWS Kinesis Stream | Producer & Consumer hands on with Experiments using Java +  @LocalStack](./assets/yt_thumb_websocket_gateway_api.png)
-
-
-![YouTube logo](../assets/yt_vid_icon.png)  
-[Video Link](https://youtu.be/95ZgCv9cnls)  
-
-This video demonstrates implementation of AWS Kinesis Producer and Consumer using Java + LocalStack setup.
-
-</br>
-</br>
+![AWS Kinesis Stream | Producer & Consumer hands on with Experiments using Java +  @LocalStack](/images/yt_thumb_websocket_gateway_api.png)
 
 ---
 

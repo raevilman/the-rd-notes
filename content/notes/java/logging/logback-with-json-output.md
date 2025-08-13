@@ -7,16 +7,8 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: 
+tags: java, logging, logback, json
 ---
-
-> ## Watch the video instead: [link](https://youtu.be/usKrJZ7LcfE)  
-> ## Source repo at GitHub: [link](https://github.com/raevilman/vlog-logback-json-data)
-
-</br>
----
-</br>
-</br>
 
 ## #1 Add dependencies
 ```
@@ -65,8 +57,6 @@ Make `logback.xml` look like below:
 ```
 
 > NOTE: CustomLogbackJsonLayout refers to the class we will create in the next step. Please update its path as per your project.
-<br/>
-<br/>  
 
 ---
 

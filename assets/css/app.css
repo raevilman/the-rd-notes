@@ -148,11 +148,21 @@ body {
 }
 
 /* Lists */
-.prose ul, .prose ol {
+/* Ensure list styles are visible */
+.prose ul {
   color: #24292f;
   margin-bottom: 16px;
   padding-left: 2em;
+  list-style-type: disc;
 }
+
+.prose ol {
+  color: #24292f;
+  margin-bottom: 16px;
+  padding-left: 2em;
+  list-style-type: decimal;
+}
+
 
 .dark .prose ul, .dark .prose ol {
   color: #e6edf3;

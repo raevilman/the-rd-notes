@@ -1,7 +1,7 @@
 ---
 title: 'Change domain name on Google sign-in consent screen'
 description: 'Customize the redirect domain name on Google sign-in consent screen'
-slug: '/google/firebase/authentication/change-domain-name-on-google-sign-in-consent-screen.md'
+slug: '/change-domain-name-on-google-sign-in-consent-screen'
 date_created: '2021-01-25'
 date_modified: '2021-01-25'
 author: 'RD'
@@ -14,7 +14,7 @@ This note is about changing the app name, precisely domain name on Google sign-i
 
  
 
-![google-auth-consent-correct-name](./assets/google-auth-consent-correct-name.png)
+![google-auth-consent-correct-name](/images/google-auth-consent-correct-name.png)
 
 
 

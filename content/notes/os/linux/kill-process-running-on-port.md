@@ -7,7 +7,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: 
+tags: linux, process, port
 ---
 
 ### To get the open file:  
@@ -15,7 +15,7 @@ tags:
 sudo lsof -i:8080
 ```
 
-![lsof command output](./assets/list-of-open-files-by-port.png)
+![lsof command output](/images/list-of-open-files-by-port.png)
 
 ### To kill it one go
 
