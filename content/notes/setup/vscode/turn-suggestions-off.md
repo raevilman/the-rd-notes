@@ -8,7 +8,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: vscode, suggestions, intellisense
+tags: vs-code
 ---
 
 Settings to turn off VSCode suggestions so that they only show up when you press ctrl+space

@@ -7,7 +7,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: intellij, wsl, debug, windows, java
+tags: wsl, intellij, debugging, java
 ---
 
 Steps, I've taken to debug apps on WSL.  

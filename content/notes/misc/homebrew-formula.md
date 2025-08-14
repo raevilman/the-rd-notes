@@ -8,7 +8,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: homebrew, formula
+tags: homebrew
 ---
 
 These notes are from the experience of building the project -> [future-commit](/projects/git-commit-future-date)

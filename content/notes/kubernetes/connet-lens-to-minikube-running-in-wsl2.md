@@ -7,7 +7,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags:  wsl, minikube, lens, kubernetes
+tags:  wsl, minikube, kubernetes
 ---
 
 ## What internet suggests

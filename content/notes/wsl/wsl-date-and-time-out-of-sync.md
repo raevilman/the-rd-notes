@@ -7,7 +7,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: wsl, date, time, sync
+tags: wsl, date-time, issue
 ---
 
 ## Problem

@@ -8,7 +8,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: windows, terminal, setup, hyper
+tags: windows, terminal, setup
 ---
 
 A day back, I wrote about [Setting up Hyper terminal with ZSH on Windows](/setup-hyper-terminal-with-zsh-on-windows) machine.  

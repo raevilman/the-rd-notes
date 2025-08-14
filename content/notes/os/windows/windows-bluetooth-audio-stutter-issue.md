@@ -8,7 +8,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: windows, bluetooth, audio, stutter, issue
+tags: windows, bluetooth, issue
 ---
 
 I was disappointed when I first connected my bluetooth earphones to my newly bought Windows laptop. Tried couple of solutions from the internet but in vain.  

@@ -7,7 +7,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags:  git, default-branch, main-branch
+tags:  git
 ---
 
 By default, git uses `master` as the default branch name.

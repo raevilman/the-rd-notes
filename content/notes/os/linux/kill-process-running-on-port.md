@@ -7,7 +7,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: linux, process, port
+tags: linux
 ---
 
 ### To get the open file:  
