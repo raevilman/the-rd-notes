@@ -1,7 +1,12 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxt/ui', '@nuxtjs/google-fonts', '@nuxtjs/color-mode'], // @nuxt/fonts removed
+  modules: [
+    '@nuxt/content',
+    '@nuxt/ui',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/color-mode',
+  ],
   nitro: {
     preset: 'static',
     prerender: { crawlLinks: true }
@@ -22,9 +27,10 @@ export default defineNuxtConfig({
     head: {
       title: 'theRDnotes',
       meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: 'theRDnotes is a collection of technical notes, guides, and articles for developers.' }
       ],
-      htmlAttrs: { class: 'font-roboto' }
+      htmlAttrs: { lang: 'en', class: 'font-roboto' }
     }
   },
   css: ['~/assets/css/main.css', '~/assets/css/app.css'],

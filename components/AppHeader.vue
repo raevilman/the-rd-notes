@@ -13,6 +13,7 @@
         <div class="flex items-center">
           <ClientOnly>
             <UButton
+              :label="colorMode.value === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'"
               :icon="colorMode.value === 'dark' ? 'i-lucide-sun' : 'i-lucide-moon'"
               color="neutral"
               variant="ghost"

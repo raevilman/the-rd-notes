@@ -1,14 +1,7 @@
-
-
-
-// No import for queryContent; use useFetch instead
+<script setup lang="ts">
 import { useRoute } from 'vue-router'
 import { useAsyncData, useSeoMeta } from '#app'
-
-
-<script setup lang="ts">
 import { computed } from 'vue'
-
 
 const route = useRoute()
 
@@ -90,18 +83,23 @@ useSeoMeta({
     <article v-if="page?.body">
       <h1 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">{{ page.title }}</h1>
       
-      <!-- Tags display below header -->
-      <div v-if="pageTags.length" class="mb-6">
-        <div class="flex flex-wrap gap-2">
-          <UBadge 
-            v-for="tag in pageTags" 
-            :key="tag" 
-            color="neutral" 
-            variant="soft"
-            size="sm"
-          >
-            {{ tag }}
-          </UBadge>
+      <!-- Tags and date display below header -->
+      <div v-if="pageTags.length || page?.date_created" class="mb-16">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div class="flex flex-wrap gap-2">
+            <UBadge 
+              v-for="tag in pageTags" 
+              :key="tag" 
+              color="neutral" 
+              variant="soft"
+              size="sm"
+            >
+              {{ tag }}
+            </UBadge>
+          </div>
+          <span v-if="page?.date_created" class="ml-4 text-xs text-gray-500 dark:text-gray-400 whitespace-nowrap">
+            {{ new Date(page.date_created).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' }) }}
+          </span>
         </div>
       </div>
       
