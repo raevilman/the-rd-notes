@@ -7,7 +7,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: git, branch, commit, main, master
+tags: git
 ---
 
 # Understand the concept

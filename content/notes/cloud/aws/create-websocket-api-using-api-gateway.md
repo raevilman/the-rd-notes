@@ -8,7 +8,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: aws, api-gateway, websocket, lambda, http-api
+tags: aws, api-gateway, websocket, lambda
 ---
 
 ![AWS Kinesis Stream | Producer & Consumer hands on with Experiments using Java +  @LocalStack](/images/yt_thumb_websocket_gateway_api.png)

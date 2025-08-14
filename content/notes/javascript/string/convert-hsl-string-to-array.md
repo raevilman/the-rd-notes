@@ -7,7 +7,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: javascript, string, hsl, array, regex
+tags: javascript, hsl
 ---
 
 JavaScript

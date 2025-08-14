@@ -7,7 +7,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: rest, api, best-practices, design
+tags: rest, api, best-practices
 ---
 <small>*a live document*</small>  
 

@@ -8,7 +8,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: debug, node, api, vercel, serverless, functions
+tags: node, api, vercel, debugging
 ---
 
 This note is about how I managed to debug Vercel Serverless Functions locally.

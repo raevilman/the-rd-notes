@@ -8,7 +8,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: windows, terminal, setup, cmder
+tags: windows, terminal, setup
 ---
 
 ## Installation

@@ -8,7 +8,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: true
-tags: git, commit, date, homebrew
+tags: git, homebrew
 ---
 
 # What?

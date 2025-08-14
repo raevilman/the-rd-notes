@@ -8,7 +8,7 @@ author: 'RD'
 is_published: true
 show_in_recent: true
 is_project: false
-tags: rest, api, sort
+tags: rest, api
 ---
 Notes on implementing sorting in REST API.  
 

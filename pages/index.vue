@@ -1,8 +1,23 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
 
-const tabIndex = ref(0)
+const route = useRoute()
+const router = useRouter()
+
+const tabs = [
+  { label: 'Articles', value: 'articles' },
+  { label: 'Projects', value: 'projects' },
+  { label: 'Tags', value: 'tags' }
+]
+
+const tabValue = ref((route.query.tab as string) || 'articles')
 const selectedTags = ref<string[]>([])
+
+watch(tabValue, (val) => {
+  router.replace({ query: { ...route.query, tab: val } })
+})
+
+
+
 
 const { data: allItems } = await useAsyncData('all-items', () => {
   return queryCollection('content')
@@ -23,18 +38,11 @@ const allTags = computed(() => {
 })
 
 const filteredItems = computed(() => {
-  const tabValue = Number(tabIndex.value)
-  
   let items = (allItems.value || [])
-  
-  if (tabValue === 1) {
-    // Projects tab - no tag filtering
+  if (tabValue.value === 'projects') {
     items = items.filter(i => i.is_project === true)
-  } else if (tabValue === 2) {
-    // Tags tab - show articles with tag filtering
+  } else if (tabValue.value === 'tags') {
     items = items.filter(i => i.is_project !== true)
-    
-    // Apply tag filtering only for Tags tab
     if (selectedTags.value.length > 0) {
       items = items.filter(i => {
         const tags = Array.isArray(i.tags) ? i.tags : (typeof i.tags === 'string' ? i.tags.split(',').map(t => t.trim()) : [])
@@ -42,11 +50,17 @@ const filteredItems = computed(() => {
       })
     }
   } else {
-    // Articles tab (default) - no tag filtering
     items = items.filter(i => i.is_project !== true)
   }
-  
-  return items
+  return items.map(i => ({
+    title: i.title ?? '',
+    description: i.description,
+    path: i.path,
+    slug: i.slug ?? i.path ?? '',
+    is_project: i.is_project,
+    tags: i.tags,
+    date_created: i.date_created
+  }))
 })
 
 function toggleTag(tag: string) {
@@ -55,11 +69,6 @@ function toggleTag(tag: string) {
   else selectedTags.value.push(tag)
 }
 
-const tabs = [
-  { label: 'Articles' },
-  { label: 'Projects' },
-  { label: 'Tags' }
-]
 </script>
 
 <template>
@@ -71,11 +80,11 @@ const tabs = [
       </div>
 
       <div class="mb-6 flex justify-center">
-        <UTabs v-model="tabIndex" :items="tabs" size="md" />
+        <UTabs v-model="tabValue" :items="tabs" size="md" />
       </div>
 
       <!-- Tag selection only shows under Tags tab -->
-      <div v-if="Number(tabIndex) === 2" class="mb-10">
+  <div v-if="tabValue === 'tags'" class="mb-10">
         <div class="text-center mb-4">
           <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-3">Filter by tags</h3>
         </div>
