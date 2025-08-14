@@ -22,9 +22,10 @@ export default defineNuxtConfig({
     head: {
       title: 'theRDnotes',
       meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: 'theRDnotes is a collection of technical notes, guides, and articles for developers.' }
       ],
-      htmlAttrs: { class: 'font-roboto' }
+      htmlAttrs: { lang: 'en', class: 'font-roboto' }
     }
   },
   css: ['~/assets/css/main.css', '~/assets/css/app.css'],
