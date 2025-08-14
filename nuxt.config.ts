@@ -1,7 +1,12 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxt/ui', '@nuxtjs/google-fonts', '@nuxtjs/color-mode'], // @nuxt/fonts removed
+  modules: [
+    '@nuxt/content',
+    '@nuxt/ui',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/color-mode',
+  ],
   nitro: {
     preset: 'static',
     prerender: { crawlLinks: true }

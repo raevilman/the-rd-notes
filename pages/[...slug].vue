@@ -1,14 +1,7 @@
-
-
-
-// No import for queryContent; use useFetch instead
+<script setup lang="ts">
 import { useRoute } from 'vue-router'
 import { useAsyncData, useSeoMeta } from '#app'
-
-
-<script setup lang="ts">
 import { computed } from 'vue'
-
 
 const route = useRoute()
 

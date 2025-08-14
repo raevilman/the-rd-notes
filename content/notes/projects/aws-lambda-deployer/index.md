@@ -10,7 +10,15 @@ show_in_recent: true
 is_project: true
 ---
 
+<iframe width="384px" height="319px" src="https://plugins.jetbrains.com/embeddable/card/14742"></iframe>
 
+## What?
+Its a JetBrains IDE plugin.
+This plugin helps in deploying the AWS Lambda function and layers build right from the JetBrains IDE.
+- Supports deployment of AWS lambda functions.
+- Supports management of AWS Lambda Layers. Create new versions, delete old versions and update lambda functions to any layer version right from the IDE.
+
+## Why?
 Leveraging [AWS Lambdas](https://aws.amazon.com/lambda/) for coding microservices or better say utility functions over API, for different projects has been my go-to option.  
 
 but deploying them after making changes is a bit brain tiring loop. therefore i developed a plugin for IntelliJ IDEA.
@@ -49,24 +57,7 @@ Open IntelliJ
 
 this plugin also helps in case you are dealing with multiple [AWS Named Profiles](http://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html) or [AWS Organization](https://aws.amazon.com/organizations/)   
 
-<br/>
-
 ---
-
-<br/>
-
-### Demo videos   
-
-|  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |  |
-| :---     |   :---: | ---:
-| 👉 Second demo | [YouTube](https://youtu.be/cYftiidD7xU) | (27 March, 2021)  
-| 👉 First demo | [YouTube](https://youtu.be/FgwptHeace4) | (25 July, 2020)
-
-<br/>
-
----
-
-<br/>
 
 ### Link
 
@@ -74,22 +65,4 @@ Link to JetBrains Plugin website:
 
 [https://plugins.jetbrains.com/plugin/14742-aws-lambda-deployer](https://plugins.jetbrains.com/plugin/14742-aws-lambda-deployer)
 
-<br/>
-
----
-
-<br/>
-
-### UPDATES
-- **01 August, 2021**
-  - Makes it compatible with JetBrains IDE v2021.2.
-- **08 April, 2021**
-  - Makes it compatible with JetBrains IDE v2021.1.
-  - Support for inbuilt AWS profiles. No dependency on AWS CLI installation.
--  **27 March, 2021**
-   -  Supports AWS Lambda Layers. Create new versions, delete old versions and update lambda functions to any layer version right from the IDE.  
-   -  Support for inbuilt AWS profiles. No dependency on AWS CLI installation.
-- **28 August, 2020**  
-  - Plugin is now compatible with IntelliJ Platform 2020.2.1  
-- **20 December, 2020**  
-  - Plugin is now compatible with IntelliJ Platform 2020.3
+<iframe width="245px" height="48px" src="https://plugins.jetbrains.com/embeddable/install/14742"></iframe>
