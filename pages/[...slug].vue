@@ -18,7 +18,9 @@ if (typeof slug === 'string') {
   slug = slug.replace(/\/+$/, '')
 } else if (Array.isArray(slug)) {
   console.log('Array slug detected:', slug)
-  slug = slug.map(s => s.replace(/\/+$/, '')).join('/')
+  slug = slug
+  .filter(s => s !== '')
+  .map(s => s.replace(/\/+$/, '')).join('/')
 }
 
 // Hardcoded: Render the article with slug 'git-init-default-branch-name' using Nuxt Content v3 queryCollection
