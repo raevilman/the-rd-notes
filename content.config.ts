@@ -1,8 +1,9 @@
 import { defineContentConfig, defineCollection, z } from '@nuxt/content'
+import { asSitemapCollection } from '@nuxtjs/sitemap/content'
 
 export default defineContentConfig({
   collections: {
-    content: defineCollection({
+    content: defineCollection(asSitemapCollection({
       type: 'page',
       source: '**/*.md',
       schema: z.object({
@@ -15,9 +16,10 @@ export default defineContentConfig({
         is_published: z.boolean().optional().default(true),
         show_in_recent: z.boolean().optional(),
         is_project: z.boolean().optional().default(false),
-        tags: z.union([z.array(z.string()), z.string()]).optional()
+        tags: z.union([z.array(z.string()), z.string()]).optional(),
+        // now supports `sitemap` and `robots` frontmatter keys via asSitemapCollection
       })
-    })
+    }))
   }
 })
 
