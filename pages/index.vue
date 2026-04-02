@@ -9,11 +9,26 @@ const tabs = [
   { label: 'Tags', value: 'tags' }
 ]
 
-const tabValue = ref((route.query.tab as string) || 'articles')
+// Always default to 'articles' for SSR to match the pre-rendered HTML,
+// then sync from the query param on the client to avoid hydration mismatch.
+const tabValue = ref('articles')
 const selectedTags = ref<string[]>([])
+
+onMounted(() => {
+  const tab = route.query.tab as string
+  if (tab && ['articles', 'projects', 'tags'].includes(tab)) {
+    tabValue.value = tab
+  }
+})
 
 watch(tabValue, (val) => {
   router.replace({ query: { ...route.query, tab: val } })
+})
+
+watch(() => route.query.tab, (tab) => {
+  if (tab && tab !== tabValue.value) {
+    tabValue.value = tab as string
+  }
 })
 
 

@@ -1,4 +1,19 @@
 import { defineNuxtConfig } from 'nuxt/config'
+import { readFileSync, readdirSync, statSync } from 'node:fs'
+import { join } from 'node:path'
+
+function collectMarkdownFiles(dir: string): string[] {
+  const files: string[] = []
+  for (const entry of readdirSync(dir)) {
+    const full = join(dir, entry)
+    if (statSync(full).isDirectory()) {
+      files.push(...collectMarkdownFiles(full))
+    } else if (entry.endsWith('.md')) {
+      files.push(full)
+    }
+  }
+  return files
+}
 
 export default defineNuxtConfig({
   // Load sitemap before content to enable future Nuxt Content integration if needed
@@ -6,6 +21,28 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'static',
     prerender: { crawlLinks: true }
+  },
+  hooks: {
+    'nitro:config'(nitroConfig) {
+      if (nitroConfig.dev) return
+      if (!nitroConfig.prerender) nitroConfig.prerender = {}
+      if (!nitroConfig.prerender.routes) nitroConfig.prerender.routes = []
+
+      const contentDir = join(process.cwd(), 'content')
+      const mdFiles = collectMarkdownFiles(contentDir)
+      const slugRegex = /^slug:\s*['"]?([^'"\n]+)['"]?/m
+
+      for (const file of mdFiles) {
+        const text = readFileSync(file, 'utf-8')
+        const match = text.match(slugRegex)
+        if (match) {
+          const slug = match[1].trim()
+          if (!nitroConfig.prerender.routes.includes(slug)) {
+            nitroConfig.prerender.routes.push(slug)
+          }
+        }
+      }
+    }
   },
   compatibilityDate: '2025-08-13',
   // Site config used by @nuxtjs/sitemap (and other Nuxt SEO modules)
