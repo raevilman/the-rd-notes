@@ -1,5 +1,6 @@
 <template>
   <UApp>
+    <KowltBanner />
     <AppHeader />
     <UContainer>
       <NuxtPage />
