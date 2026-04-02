@@ -1,3 +1,14 @@
+---
+title: 'MEL Privacy Policy'
+slug: '/mel-privacy-policy'
+date_created: '2026-04-02'
+date_modified: '2026-04-02'
+author: 'RD'
+is_published: true
+show_in_recent: true
+is_project: false
+tags: 
+---
 # Privacy Policy
 
 **App:** MEL – Minimum Expense Ledger  
