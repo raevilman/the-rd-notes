@@ -2,9 +2,9 @@
 const router = useRouter()
 
 const menuItems = [
-  { label: 'Notes', icon: '📝', path: '/notes' },
-  { label: 'Projects', icon: '🚀', path: '/projects' },
-  { label: 'Tags', icon: '🏷️', path: '/tags' }
+  { label: 'Notes', icon: 'i-lucide-file-text', path: '/notes' },
+  { label: 'Projects', icon: 'i-lucide-folder', path: '/projects' },
+  { label: 'Tags', icon: 'i-lucide-tags', path: '/tags' }
 ]
 
 function navigate(path: string) {
@@ -28,7 +28,7 @@ function navigate(path: string) {
             @click="navigate(item.path)"
             class="menu-card border border-slate-300/40 bg-white/40 text-slate-900 hover:border-slate-400/60 hover:bg-slate-100/70 dark:border-[#30363d] dark:bg-[#161b22] dark:text-[#c9d1d9] dark:hover:border-[#58a6ff]/35 dark:hover:bg-[#1c2128]"
           >
-            <div class="text-3xl mb-2">{{ item.icon }}</div>
+            <div class="text-3xl mb-2"><UIcon :name="item.icon" class="w-8 h-8" /></div>
             <h2 class="text-xl font-semibold">{{ item.label }}</h2>
           </button>
         </div>

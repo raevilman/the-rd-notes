@@ -105,6 +105,45 @@ const { data: relatedArticles } = await useAsyncData(
 useSeoMeta({
   title: () => page.value?.title || 'Article',
   description: () => page.value?.description || 'Concise notes and small projects around cloud, JavaScript, Java, and tooling.',
+  ogTitle: () => page.value?.title || 'Article',
+  ogDescription: () => page.value?.description || 'Concise notes and small projects around cloud, JavaScript, Java, and tooling.',
+  ogUrl: () => page.value?.path ? `https://www.therdnotes.com${page.value.path}` : 'https://www.therdnotes.com',
+  ogType: 'article',
+  ogSiteName: 'theRDnotes',
+  ogImage: 'https://www.therdnotes.com/og_image.png',
+  twitterCard: 'summary_large_image',
+  twitterTitle: () => page.value?.title || 'Article',
+  twitterDescription: () => page.value?.description || 'Concise notes and small projects around cloud, JavaScript, Java, and tooling.',
+})
+
+useHead(() => {
+  const url = page.value?.path
+    ? `https://www.therdnotes.com${page.value.path}`
+    : 'https://www.therdnotes.com'
+
+  return {
+    link: page.value?.path
+      ? [{ rel: 'canonical', href: url }]
+      : [],
+    script: page.value
+      ? [{
+          type: 'application/ld+json',
+          children: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: page.value.title,
+            description: page.value.description,
+            url,
+            datePublished: page.value.date_created,
+            dateModified: page.value.date_modified || page.value.date_created,
+            author: {
+              '@type': 'Person',
+              name: page.value.author || 'RD'
+            }
+          })
+        }]
+      : []
+  }
 })
 </script>
 

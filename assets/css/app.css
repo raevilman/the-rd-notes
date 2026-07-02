@@ -321,4 +321,9 @@ body,
   color: #7d8590;
 }
 
+/* Hide duplicate h1 rendered from markdown when template already provides one */
+.prose > h1:first-child {
+  display: none;
+}
+
 
