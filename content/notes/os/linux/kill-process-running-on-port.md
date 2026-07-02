@@ -2,10 +2,7 @@
 title: 'Kill process running on port'
 slug: '/kill-process-running-on-port'
 date_created: '2023-01-09'
-date_modified: '2023-01-09'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: linux
 ---

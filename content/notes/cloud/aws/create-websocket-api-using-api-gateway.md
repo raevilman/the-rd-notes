@@ -3,10 +3,7 @@ title: 'Create WebSocket API using AWS API Gateway | HTTP & Lambda Integration'
 description: 'Lets implement a WebSocket API using AWS API Gateway and integrate it with HTTP API and lambda backend.'
 slug: '/create-websocket-api-using-api-gateway'
 date_created: '2022-09-24'
-date_modified: '2022-09-24'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: aws, api-gateway, websocket, lambda
 ---

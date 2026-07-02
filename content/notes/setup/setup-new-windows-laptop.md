@@ -3,10 +3,7 @@ title: 'Setup New Windows Laptop'
 description: 'Setting the new Windows machine'
 slug: '/setup-new-windows-laptop'
 date_created: '2020-10-04'
-date_modified: '2024-10-17'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: windows, setup
 ---

@@ -22,19 +22,19 @@
   },
   "homepage": "https://github.com/raevilman/the-rd-notes#readme",
   "dependencies": {
-    "@nuxt/content": "^3.6.3",
-    "@nuxt/ui": "^3.3.0",
-    "@nuxtjs/color-mode": "^3.5.2",
+    "@nuxt/content": "^3.14.0",
+    "@nuxt/ui": "^4.9.0",
+    "@nuxtjs/color-mode": "^4.0.1",
     "@nuxtjs/google-fonts": "^3.2.0",
-    "@nuxtjs/robots": "5.5.1",
-    "@nuxtjs/sitemap": "7.4.3",
-    "better-sqlite3": "^12.2.0",
-    "nuxt": "^4.0.3",
-    "vue": "^3.5.18"
+    "@nuxtjs/robots": "6.1.1",
+    "@nuxtjs/sitemap": "8.2.1",
+    "better-sqlite3": "^12.11.1",
+    "nuxt": "^4.4.8",
+    "vue": "^3.5.39"
   },
   "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee",
   "devDependencies": {
-    "@iconify-json/lucide": "^1.2.62",
-    "tailwindcss": "^4.1.11"
+    "@iconify-json/lucide": "^1.2.114",
+    "tailwindcss": "^4.3.1"
   }
 }

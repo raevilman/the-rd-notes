@@ -2,10 +2,7 @@
 title: 'Share ARG in multi-stage Dockerfile'
 slug: '/sharing-arg-in-multi-stage-dockerfile'
 date_created: '2023-02-23'
-date_modified: '2023-02-23'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: docker, dockerfile
 ---

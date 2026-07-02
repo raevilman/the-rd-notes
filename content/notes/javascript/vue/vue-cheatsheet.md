@@ -2,10 +2,7 @@
 title: 'Vue Declaration CheatSheet'
 slug: '/vue-declaration-cheatsheet'
 date_created: '2023-03-18'
-date_modified: '2023-03-18'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: vue, cheatsheet
 ---

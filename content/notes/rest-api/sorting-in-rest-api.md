@@ -3,10 +3,7 @@ title: 'Sorting in REST API'
 description: 'Implementing a query parameter for sorting in REST API'
 slug: '/sorting-in-rest-api'
 date_created: '2020-09-09'
-date_modified: '2020-09-09'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: rest, api
 ---

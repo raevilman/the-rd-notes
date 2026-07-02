@@ -2,10 +2,7 @@
 title: '[Notes] IAM Authentication for RDS MySQL'
 slug: '/rds-mysql-iam-authentication'
 date_created: '2023-01-25'
-date_modified: '2023-01-25'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: aws, rds, mysql, iam, authentication
 ---

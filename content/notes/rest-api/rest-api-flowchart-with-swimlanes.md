@@ -3,10 +3,7 @@ title: 'REST API Flowchart with Swimlanes'
 description: 'Demonstrating flow of REST API by creating flowchart with swimlanes'
 slug: '/rest-api-flowchart-with-swimlanes'
 date_created: '2021-09-14'
-date_modified: '2021-09-12'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: rest, api, flowchart
 ---

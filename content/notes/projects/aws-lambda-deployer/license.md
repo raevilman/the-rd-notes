@@ -1,3 +1,14 @@
+---
+title: 'AWS Lambda Deployer - End User License Agreement'
+slug: '/projects/aws-lambda-deployer/license'
+date_created: '2023-01-21'
+is_published: true
+is_project: false
+tags: []
+robots:
+  index: false
+---
+
 ## END USER LICENSE AGREEMENT
 Last updated January 21, 2023  
 

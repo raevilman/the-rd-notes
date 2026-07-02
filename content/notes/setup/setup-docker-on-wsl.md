@@ -2,10 +2,7 @@
 title: 'Install docker in WSL without Docker Desktop'
 slug: '/install-docker-in-wsl-without-docker-desktop'
 date_created: '2022-11-29'
-date_modified: '2022-11-29'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: docker, wsl, docker-desktop
 ---

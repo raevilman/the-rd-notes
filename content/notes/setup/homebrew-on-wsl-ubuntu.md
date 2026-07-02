@@ -2,10 +2,7 @@
 title: 'Install homebrew on WSL Ubuntu'
 slug: '/homebrew-on-wsl-ubuntu'
 date_created: '2022-09-23'
-date_modified: '2022-09-23'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: wsl, homebrew, ubuntu
 ---

@@ -3,10 +3,7 @@ title: 'Setup terminal with ZSH on windows'
 description: 'Setting up  zsh with oh-my-zsh on Windows'
 slug: '/setup-zsh-on-windows'
 date_created: '2020-12-05'
-date_modified: '2020-12-08'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: wsl, zsh, windows, terminal
 ---

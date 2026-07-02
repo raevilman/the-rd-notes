@@ -3,10 +3,7 @@ title: 'Setup VS Code'
 description: 'Setting up the VS Code editor machines'
 slug: '/setup-vs-code'
 date_created: '2020-10-04'
-date_modified: '2020-10-04'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: vs-code, setup
 ---

@@ -3,10 +3,7 @@ title: 'Useful console.log() tips'
 description: ''
 slug: '/console-log-tips'
 date_created: '2021-01-08'
-date_modified: '2021-01-08'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: javascript, console, debugging
 ---

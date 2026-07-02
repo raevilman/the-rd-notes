@@ -2,10 +2,7 @@
 title: 'WSL date and time out of sync'
 slug: '/wsl-date-and-time-out-of-sync'
 date_created: '2023-08-20'
-date_modified: '2023-08-20'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: wsl, date-time, issue
 ---

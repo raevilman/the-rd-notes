@@ -2,10 +2,7 @@
 title: 'Use SCSS with Nuxt 3'
 slug: '/use-scss-with-nuxt-3'
 date_created: '2023-03-26'
-date_modified: '2023-03-26'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: nuxt, scss
 ---

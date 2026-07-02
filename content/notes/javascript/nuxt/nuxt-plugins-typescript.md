@@ -3,10 +3,7 @@ title: "Nuxt Plugins Typescript"
 description: "Nuxt Plugins in Typescript"
 slug: "/nuxt-plugins-typescript"
 date_created: "2022-11-19"
-date_modified: "2022-11-19"
-author: "RD"
 is_published: true
-show_in_recent: true
 is_project: false
 tags: nuxt, typescript, plugins
 ---

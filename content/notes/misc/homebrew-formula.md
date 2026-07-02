@@ -3,10 +3,7 @@ title: 'Packaging homebrew formula'
 description: 'Notes on packaging a homebrew formula and serving through personal tap'
 slug: '/packaging-homebrew-formula'
 date_created: '2022-10-01'
-date_modified: '2022-10-01'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: homebrew
 ---

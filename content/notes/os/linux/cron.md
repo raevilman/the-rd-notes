@@ -1,11 +1,8 @@
 ---
-title: 'Add Cron Job on Linux'
+title: 'Add cron job on linux'
 slug: '/add-cron-job-on-linux'
 date_created: '2022-12-20'
-date_modified: '2022-12-20'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: linux, cron
 ---

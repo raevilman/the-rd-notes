@@ -2,10 +2,7 @@
 title: 'Connect Lens to Minikube running in WSL2'
 slug: '/connet-lens-to-minikube-running-in-wsl2'
 date_created: '2024-02-09'
-date_modified: '2024-02-09'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags:  wsl, minikube, kubernetes
 ---
