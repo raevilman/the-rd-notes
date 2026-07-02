@@ -3,10 +3,7 @@ title: 'Forward reference extends over definition'
 description: 'A note on the issue I faced while working with Vert.x in Scala'
 slug: '/forward-reference-extends-over-definition'
 date_created: '2020-02-22'
-date_modified: '2020-02-22'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: scala, vertx
 ---

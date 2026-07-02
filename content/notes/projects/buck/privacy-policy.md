@@ -2,10 +2,7 @@
 title: 'Buck Privacy Policy'
 slug: '/bucks-privacy-policy'
 date_created: '2023-12-10'
-date_modified: '2023-12-10'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: 
 ---

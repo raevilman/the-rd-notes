@@ -18,12 +18,42 @@ if (typeof slug === 'string') {
 
 // Hardcoded: Render the article with slug 'git-init-default-branch-name' using Nuxt Content v3 queryCollection
 
+const normalizedSlug = typeof slug === 'string' ? slug : ''
+const normalizedPath = normalizedSlug ? `/${normalizedSlug}` : ''
+const slugLeaf = normalizedSlug.split('/').filter(Boolean).pop() || normalizedSlug
+const slugWithSlash = normalizedSlug ? `/${normalizedSlug}` : ''
+
 const { data: page } = await useAsyncData(`content-${slug}`, async () => {
   try {
-    const result = await queryCollection('content')
-      .where('slug', 'LIKE', `%${slug}%`)
+    // 1) Prefer exact slug match to preserve historical SEO URLs.
+    if (slugLeaf) {
+      const bySlugExact = await queryCollection('content')
+        .where('slug', '=', slugLeaf)
+        .first()
+      if (bySlugExact) return bySlugExact
+    }
+
+    // 2) Match slug with leading slash if content stores it that way.
+    if (slugWithSlash) {
+      const bySlugSlash = await queryCollection('content')
+        .where('slug', '=', slugWithSlash)
+        .first()
+      if (bySlugSlash) return bySlugSlash
+    }
+
+    // 3) Fallback to exact content path match for nested notes URLs.
+    if (normalizedPath) {
+      const byPath = await queryCollection('content')
+        .where('path', '=', normalizedPath)
+        .first()
+      if (byPath) return byPath
+    }
+
+    // 4) Last resort for legacy links.
+    const byLike = await queryCollection('content')
+      .where('slug', 'LIKE', `%${normalizedSlug}%`)
       .first()
-    return result
+    return byLike
   } catch (error) {
     console.error('Query error:', error)
     return null
@@ -103,7 +133,7 @@ useSeoMeta({
         </div>
       </div>
       
-      <div class="prose prose-gray dark:prose-invert max-w-none">
+      <div class="prose max-w-none">
         <ContentRenderer :value="page" />
       </div>
       

@@ -3,10 +3,7 @@ title: 'How to Use Lucide Icons with Vuetify'
 description: 'A guide on integrating Lucide icons into a Vuetify project.'
 slug: '/how-to-use-lucide-icons-with-vuetify'
 date_created: '2025-08-14'
-date_modified: '2025-08-14'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: vuetify, javascript
 ---

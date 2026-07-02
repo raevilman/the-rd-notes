@@ -2,10 +2,7 @@
 title: 'Dockerize gradle project'
 slug: '/dockerize-gradle-project'
 date_created: '2023-02-23'
-date_modified: '2023-02-23'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: docker, gradle, java
 ---

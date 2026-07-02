@@ -2,10 +2,7 @@
 title: 'Use UnoCSS with Nuxt 3'
 slug: '/use-unocss-with-nuxt-3'
 date_created: '2023-04-01'
-date_modified: '2023-04-01'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: nuxt, unocss
 ---

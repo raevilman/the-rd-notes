@@ -2,10 +2,7 @@
 title: 'How to Change the Default Git Branch Name to Main (Best Practices for Modern Repositories)'
 slug: '/git-init-default-branch-name'
 date_created: '2024-02-09'
-date_modified: '2024-02-09'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags:  git
 ---

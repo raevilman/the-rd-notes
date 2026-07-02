@@ -2,10 +2,7 @@
 title: 'IntelliJ Debug on WSL Windows'
 slug: '/intellij-debug-on-wsl-windows'
 date_created: '2022-12-27'
-date_modified: '2022-12-27'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: wsl, intellij, debugging, java
 ---

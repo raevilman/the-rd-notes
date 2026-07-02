@@ -2,10 +2,7 @@
 title: 'Logback with JSON output'
 slug: '/logback-with-json-output'
 date_created: '2022-12-02'
-date_modified: '2022-12-02'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: java, logging, logback, json
 ---

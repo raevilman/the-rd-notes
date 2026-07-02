@@ -3,10 +3,7 @@ title: 'Setup Git on Windows'
 description: 'Setting up Git on Windows machine'
 slug: '/setup-git-on-windows'
 date_created: '2020-10-04'
-date_modified: '2020-10-04'
-author: 'RD'
 is_published: true
-show_in_recent: true
 tags: git, windows, ssh
 ---
 

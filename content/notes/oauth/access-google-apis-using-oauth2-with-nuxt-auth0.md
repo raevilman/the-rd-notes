@@ -3,10 +3,7 @@ title: 'Access Google APIs using OAuth2 with Nuxt and Auth0'
 description: ''
 slug: '/access-google-apis-using-oauth2-with-nuxt-auth0'
 date_created: '2021-08-22'
-date_modified: '2021-08-22'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 
 ---

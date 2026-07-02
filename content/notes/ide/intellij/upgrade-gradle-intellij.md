@@ -3,10 +3,7 @@ title: 'Upgrade gradle in Intellij Project'
 description: ''
 slug: '/upgrade-gradle-intellij'
 date_created: '2021-08-01'
-date_modified: '2021-08-01'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: gradle, intellij
 ---

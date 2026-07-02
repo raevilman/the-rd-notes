@@ -2,10 +2,7 @@
 title: 'Convert HSL string to array'
 slug: '/convert-hsl-string-to-array'
 date_created: '2022-09-17'
-date_modified: '2022-09-17'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: javascript, hsl
 ---

@@ -3,10 +3,7 @@ title: 'Debug Vercel Serverless Functions Locally'
 description: 'A vlog showcasing how I debug Vercel Serverless Functions locally'
 slug: '/debug-vercel-serverless-functions-locally'
 date_created: '2021-09-17'
-date_modified: '2021-09-17'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: node, api, vercel, debugging
 ---

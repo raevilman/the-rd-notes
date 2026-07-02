@@ -2,10 +2,7 @@
 title: 'Manage dependencies with pnpm, yarn and npm'
 slug: '/manage-dependencies-with-pnpm-yarn-npm'
 date_created: '2023-11-25'
-date_modified: '2023-11-25'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: npm, yarn, pnpm, cheatsheet
 ---

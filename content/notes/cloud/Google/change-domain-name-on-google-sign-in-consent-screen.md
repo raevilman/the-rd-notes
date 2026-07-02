@@ -3,10 +3,7 @@ title: 'Change domain name on Google sign-in consent screen'
 description: 'Customize the redirect domain name on Google sign-in consent screen'
 slug: '/change-domain-name-on-google-sign-in-consent-screen'
 date_created: '2021-01-25'
-date_modified: '2021-01-25'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: google, firebase, authentication
 ---

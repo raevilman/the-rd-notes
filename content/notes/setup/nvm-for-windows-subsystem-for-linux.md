@@ -3,10 +3,7 @@ title: 'NVM for Windows Subsystem for Linux'
 description: 'Opt for nvm over node when using WSL'
 slug: '/nvm-for-windows-subsystem-for-linux'
 date_created: '2020-12-06'
-date_modified: '2020-12-06'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: windows, terminal, setup
 ---

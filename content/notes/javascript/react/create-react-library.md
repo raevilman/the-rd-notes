@@ -3,10 +3,7 @@ title: 'Create React Library'
 description: 'Creating your own react module using create-react-library'
 slug: '/create-react-library'
 date_created: '2020-09-14'
-date_modified: '2020-09-14'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: react, library
 ---

@@ -47,3 +47,5 @@ coverage
 *.lcov
 .nyc_output
 reports
+content/notes/.obsidian/*
+.playwright-mcp/*

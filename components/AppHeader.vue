@@ -1,11 +1,11 @@
 <template>
-  <header class="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 sticky top-0 z-50">
+  <header class="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/95 sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/95 dark:supports-[backdrop-filter]:bg-[#0d1117]/95">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <!-- Logo -->
         <div class="flex items-center">
           <NuxtLink to="/" class="flex items-center">
-            <span class="text-xl font-semibold text-gray-900 dark:text-white">theRDnotes</span>
+            <span class="text-xl font-semibold text-gray-900 dark:text-[#c9d1d9]">theRDnotes</span>
           </NuxtLink>
         </div>
 

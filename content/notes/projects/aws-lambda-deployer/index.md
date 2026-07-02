@@ -3,11 +3,9 @@ title: 'AWS Lambda Deployer'
 description: 'a plugin to deploy aws lambda right from IntelliJ IDEA'
 slug: '/projects/aws-lambda-deployer'
 date_created: '2020-07-18'
-date_modified: '2021-03-29'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: true
+tags: []
 ---
 
 <iframe width="384px" height="319px" src="https://plugins.jetbrains.com/embeddable/card/14742"></iframe>

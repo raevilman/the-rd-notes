@@ -2,10 +2,7 @@
 title: 'IntelliJ GUI application with WSL'
 slug: '/intellij-gui-application-with-wsl'
 date_created: '2023-06-25'
-date_modified: '2023-06-25'
-author: 'RD'
 is_published: true
-show_in_recent: true
 is_project: false
 tags: wsl, gui
 ---
