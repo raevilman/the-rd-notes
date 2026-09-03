@@ -1,5 +1,0 @@
-User-agent: *
-Disallow:
-
-# Nuxt Sitemap is served at /sitemap.xml
-Sitemap: https://www.therdnotes.com/sitemap.xml

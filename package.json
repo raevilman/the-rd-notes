@@ -1,40 +1,23 @@
 {
   "name": "the-rd-notes",
-  "version": "2.0.0",
-  "description": "RD Notes - Nuxt Content blog",
+  "version": "3.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "nuxt dev --port 3000",
-    "build": "nuxt build",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "start": "nuxt start"
+    "dev": "vite --port 3000",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/raevilman/the-rd-notes.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/raevilman/the-rd-notes/issues"
-  },
-  "homepage": "https://github.com/raevilman/the-rd-notes#readme",
   "dependencies": {
-    "@nuxt/content": "^3.14.0",
-    "@nuxt/ui": "^4.9.0",
-    "@nuxtjs/color-mode": "^4.0.1",
-    "@nuxtjs/google-fonts": "^3.2.0",
-    "@nuxtjs/robots": "6.1.1",
-    "@nuxtjs/sitemap": "8.2.1",
-    "better-sqlite3": "^12.11.1",
-    "nuxt": "^4.4.8",
-    "vue": "^3.5.39"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
-  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee",
   "devDependencies": {
-    "@iconify-json/lucide": "^1.2.114",
-    "tailwindcss": "^4.3.1"
-  }
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.2",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5"
+  },
+  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
 }

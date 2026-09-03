@@ -1,51 +1,39 @@
-.cache
+# Dependencies
 node_modules
+.pnp
+.pnp.js
 
-# Other
-.DS_Store
-yarn-error.log
-.env.development
-.env.production
-
-# Project dependencies
-node_modules
-.cache
-
-# Nuxt build output (do not commit)
-.nuxt
-.output
-.data
+# Build output
 dist
-vercel_build_output
-build-*
+dist-ssr
 
-# Logs
-*.log
-yarn-error.log
-
-# Environment files
+# Env files
 .env
 .env.*
+!.env.example
 
-# System files
-.DS_Store
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
-# VSCode
+# Editor / OS
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
 !.vscode/extensions.json
-!.vscode/*.code-snippets
-
-# IDEs
-*.iml
 .idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.tsbuildinfo
 
-# Coverage and test output
-coverage
-*.lcov
-.nyc_output
-reports
-content/notes/.obsidian/*
-.playwright-mcp/*
+# Optional dev tooling
+/cypress/videos/
+/cypress/screenshots/
+.playwright-mcp/
